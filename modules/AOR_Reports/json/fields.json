@@ -1,0 +1,109 @@
+[
+    {
+        "name": "q_9_1",
+        "label": "LBL_Q_9_1",
+		"labelValue": "TAS Expiration date",
+        "type": "date",
+        "module_name": "Profile",
+        "package_name": "Profile"
+    },
+
+    {
+        "name": "q_2",
+        "label": "LBL_Q_2",
+		"labelValue": "Meets Australian Study Requirement criteria",
+        "type": "text",
+        "module_name": "Profile",
+        "package_name": "Profile"
+    },
+    {
+        "name": "q_7_1",
+        "label": "LBL_Q_7_1",
+		"labelValue": "Detail",
+        "type": "text",
+        "module_name": "Profile",
+        "package_name": "Profile"
+    },
+    {
+        "name": "q_8_1",
+        "label": "LBL_Q_8_1",
+		"labelValue": "Detail",
+        "type": "text",
+        "module_name": "Profile",
+        "package_name": "Profile"
+    },
+    {
+        "name": "q_20_1",
+        "label": "LBL_Q_20_1",
+		"labelValue": "Detail",
+        "type": "text",
+        "module_name": "Profile",
+        "package_name": "Profile"
+    },
+    
+
+    {
+        "name": "q_1_1",
+        "label": "LBL_Q_1_1",
+		"labelValue": "Speaking",
+        "type": "decimal",
+        "module_name": "Profile",
+        "package_name": "Profile"
+    },
+    {
+        "name": "q_1_2",
+        "label": "LBL_Q_1_2",
+		"labelValue": "Listening",
+        "type": "decimal",
+        "module_name": "Profile",
+        "package_name": "Profile"
+    },
+    {
+        "name": "q_1_3",
+        "label": "LBL_Q_1_3",
+		"labelValue": "Reading",
+        "type": "decimal",
+        "module_name": "Profile",
+        "package_name": "Profile"
+    },
+    {
+        "name": "q_1_4",
+        "label": "LBL_Q_1_4",
+		"labelValue": "Writing",
+        "type": "decimal",
+        "module_name": "Profile",
+        "package_name": "Profile"
+    },
+    {
+        "name": "q_5",
+        "label": "LBL_Q_5",
+		"labelValue": "Must check on CRICOS that course is at least 96 weeks or more",
+        "type": "decimal",
+        "module_name": "Profile",
+        "package_name": "Profile"
+    },
+    {
+        "name": "q_10",
+        "label": "LBL_Q_10",
+		"labelValue": "How many moths do the you have of experience?",
+        "type": "decimal",
+        "module_name": "Profile",
+        "package_name": "Profile"
+    },
+    {
+        "name": "q_14",
+        "label": "LBL_Q_14",
+		"labelValue": "Company must pay SAF - Training Contribution fee",
+        "type": "decimal",
+        "module_name": "Profile",
+        "package_name": "Profile"
+    },
+    {
+        "name": "q_24",
+        "label": "LBL_Q_24",
+		"labelValue": "How long have you been living together?",
+        "type": "decimal",
+        "module_name": "Profile",
+        "package_name": "Profile"
+    }
+]

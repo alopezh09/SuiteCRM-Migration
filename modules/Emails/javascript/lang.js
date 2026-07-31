@@ -1,0 +1,1 @@
+setTimeout(()=>{$('.selected-actions-label-text').text('My Folders')},100)

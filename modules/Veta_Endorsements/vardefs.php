@@ -1,0 +1,386 @@
+<?php
+
+/**
+ *
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
+ *
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
+ * Copyright (C) 2011 - 2018 SalesAgility Ltd.
+ *
+ * This program is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License version 3 as published by the
+ * Free Software Foundation with the addition of the following permission added
+ * to Section 15 as permitted in Section 7(a): FOR ANY PART OF THE COVERED WORK
+ * IN WHICH THE COPYRIGHT IS OWNED BY SUGARCRM, SUGARCRM DISCLAIMS THE WARRANTY
+ * OF NON INFRINGEMENT OF THIRD PARTY RIGHTS.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with
+ * this program; if not, see http://www.gnu.org/licenses or write to the Free
+ * Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301 USA.
+ *
+ * You can contact SugarCRM, Inc. headquarters at 10050 North Wolfe Road,
+ * SW2-130, Cupertino, CA 95014, USA. or at email address contact@sugarcrm.com.
+ *
+ * The interactive user interfaces in modified source and object code versions
+ * of this program must display Appropriate Legal Notices, as required under
+ * Section 5 of the GNU Affero General Public License version 3.
+ *
+ * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
+ * these Appropriate Legal Notices must retain the display of the "Powered by
+ * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ */
+
+$dictionary['Veta_Endorsements'] = array(
+  'table' => 'veta_endorsements',
+  'audited' => true,
+  'inline_edit' => true,
+  'duplicate_merge' => true,
+  'fields' => array(
+    'name' =>
+    array(
+      'name' => 'name',
+      'vname' => 'LBL_NAME',
+      'type' => 'name',
+      'link' => true,
+      'dbType' => 'varchar',
+      'len' => '255',
+      'unified_search' => false,
+      'full_text_search' =>
+      array(
+        'boost' => 3,
+      ),
+      'required' => true,
+      'importable' => 'required',
+      'duplicate_merge' => 'disabled',
+      'merge_filter' => 'disabled',
+      'massupdate' => 0,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'inline_edit' => true,
+      'reportable' => true,
+      'size' => '20',
+    ),
+    'visa_type' =>
+    array(
+      'required' => false,
+      'name' => 'visa_type',
+      'vname' => 'LBL_VISA_TYPE',
+      'type' => 'enum',
+      'massupdate' => 0,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'inline_edit' => true,
+      'reportable' => true,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'len' => 100,
+      'size' => '20',
+      'options' => 'tipo_visa_list',
+      'studio' => 'visible',
+      'dependency' => false,
+    ),
+    'ocupation' =>
+    array(
+      'required' => false,
+      'name' => 'ocupation',
+      'vname' => 'LBL_OCUPATION',
+      'type' => 'varchar',
+      'massupdate' => 0,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'inline_edit' => true,
+      'reportable' => true,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'len' => '255',
+      'size' => '20',
+    ),
+    'positions_year_1' =>
+    array(
+      'required' => false,
+      'name' => 'positions_year_1',
+      'vname' => 'LBL_POSITIONS_YEAR_1',
+      'type' => 'varchar',
+      'massupdate' => 0,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'inline_edit' => true,
+      'reportable' => true,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'len' => '255',
+      'size' => '20',
+      'enable_range_search' => false,
+      'disable_num_format' => '',
+      'min' => false,
+      'max' => false,
+    ),
+    'positions_year_3' =>
+    array(
+      'required' => false,
+      'name' => 'positions_year_3',
+      'vname' => 'LBL_POSITIONS_YEAR_3',
+      'type' => 'varchar',
+      'massupdate' => 0,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'inline_edit' => true,
+      'reportable' => true,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'len' => '255',
+      'size' => '20',
+      'enable_range_search' => false,
+      'disable_num_format' => '',
+      'min' => false,
+      'max' => false,
+    ),
+    'positions_year_2' =>
+    array(
+      'required' => false,
+      'name' => 'positions_year_2',
+      'vname' => 'LBL_POSITIONS_YEAR_2',
+      'type' => 'varchar',
+      'massupdate' => 0,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'inline_edit' => true,
+      'reportable' => true,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'len' => '255',
+      'size' => '20',
+      'enable_range_search' => false,
+      'disable_num_format' => '',
+      'min' => false,
+      'max' => false,
+    ),
+    'positions_year_4' =>
+    array(
+      'required' => false,
+      'name' => 'positions_year_4',
+      'vname' => 'LBL_POSITIONS_YEAR_4',
+      'type' => 'varchar',
+      'massupdate' => 0,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'inline_edit' => true,
+      'reportable' => true,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'len' => '255',
+      'size' => '20',
+      'enable_range_search' => false,
+      'disable_num_format' => '',
+      'min' => false,
+      'max' => false,
+    ),
+    'positions_used_1' =>
+    array(
+      'required' => false,
+      'name' => 'positions_used_1',
+      'vname' => 'LBL_POSITIONS_USED_1',
+      'type' => 'varchar',
+      'massupdate' => 0,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'inline_edit' => true,
+      'reportable' => true,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'len' => '255',
+      'size' => '20',
+      'enable_range_search' => false,
+      'disable_num_format' => '',
+      'min' => false,
+      'max' => false,
+    ),
+    'positions_used_2' =>
+    array(
+      'required' => false,
+      'name' => 'positions_used_2',
+      'vname' => 'LBL_POSITIONS_USED_2',
+      'type' => 'int',
+      'massupdate' => 0,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'inline_edit' => true,
+      'reportable' => true,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'len' => '255',
+      'size' => '20',
+      'enable_range_search' => false,
+      'disable_num_format' => '',
+      'min' => false,
+      'max' => false,
+    ),
+    'positions_used_3' =>
+    array(
+      'required' => false,
+      'name' => 'positions_used_3',
+      'vname' => 'LBL_POSITIONS_USED_3',
+      'type' => 'int',
+      'massupdate' => 0,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'inline_edit' => true,
+      'reportable' => true,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'len' => '255',
+      'size' => '20',
+      'enable_range_search' => false,
+      'disable_num_format' => '',
+      'min' => false,
+      'max' => false,
+    ),
+    'positions_used_4' =>
+    array(
+      'required' => false,
+      'name' => 'positions_used_4',
+      'vname' => 'LBL_POSITIONS_USED_4',
+      'type' => 'int',
+      'massupdate' => 0,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'inline_edit' => true,
+      'reportable' => true,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'len' => '255',
+      'size' => '20',
+      'enable_range_search' => false,
+      'disable_num_format' => '',
+      'min' => false,
+      'max' => false,
+    ),
+    'positions_used_5' =>
+    array(
+      'required' => false,
+      'name' => 'positions_used_5',
+      'vname' => 'LBL_POSITIONS_USED_5',
+      'type' => 'int',
+      'massupdate' => 0,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'inline_edit' => true,
+      'reportable' => true,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'len' => '255',
+      'size' => '20',
+      'enable_range_search' => false,
+      'disable_num_format' => '',
+      'min' => false,
+      'max' => false,
+    ),
+    'positions_year_5' =>
+    array(
+      'required' => false,
+      'name' => 'positions_year_5',
+      'vname' => 'LBL_POSITIONS_YEAR_5',
+      'type' => 'varchar',
+      'massupdate' => 0,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'inline_edit' => true,
+      'reportable' => true,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'len' => '255',
+      'size' => '20',
+      'enable_range_search' => false,
+      'disable_num_format' => '',
+      'min' => false,
+      'max' => false,
+    ),
+    'virtual_region_c' =>
+    array(
+      'name' => 'virtual_region_c',
+      'vname' => 'LBL_VIRTUAL_REGION_C',
+      'type' => 'multienum',
+      'function' => 'getRegion',
+      'source' => 'non-db',
+    ),
+  ),
+  'relationships' => array(),
+  'optimistic_locking' => true,
+  'unified_search' => true,
+);
+if (!class_exists('VardefManager')) {
+  require_once('include/SugarObjects/VardefManager.php');
+}
+VardefManager::createVardef('Veta_Endorsements', 'Veta_Endorsements', array('basic', 'assignable', 'security_groups'));
