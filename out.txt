@@ -1,0 +1,1000 @@
+ 1027  tail -f suitecrm.log | grep "send_email" -A 7 
+ 1028  exot
+ 1029  exit
+ 1030  crontab -e
+ 1031  cd outlook-api/
+ 1032  ls
+ 1033  grep "nuesca@ef" files/* > out.txt 
+ 1034  vim out.txt 
+ 1035  grep "sol.nuesca@ef" files/* > out.txt 
+ 1036  vim out.txt 
+ 1037  grep "fred@mmmi" files/* > out.txt 
+ 1038  vim out.txt 
+ 1039  grep "fred@mmmi" files/* > out.txt 
+ 1040  vim out.txt 
+ 1041  grep "INV-CO-1149" files/* > out.txt 
+ 1042  vim out.txt 
+ 1043  exit
+ 1044  tail -f /var/log/apache2/error.log | grep "UPDATE_PERSON"
+ 1045  history | grep "grep"
+ 1046  sudo grep -r "document_comment_c_" MMMigration
+ 1047  cd /var/www/crm.australiaveta.com.develop/
+ 1048  sudo grep -r "document_comment_c_" MMMigration
+ 1049  cd MMMigration/
+ 1050  tail -f suitecrm.log | grep "UPDATE_WORKFLOW"
+ 1051  sudo grep -r "virtual_visa_exp_date_c" MMMigration
+ 1052  cd ..
+ 1053  sudo grep -r "virtual_visa_exp_date_c" MMMigration
+ 1054  history | grep "chown"
+ 1055  sudo chown www-data:www-data MMMigration -R
+ 1056  history | grep "chmod"
+ 1057  sudo chmod 775 MMMigration -R
+ 1058  sudo grep -r "virtual_visa_exp_date_c" MMMigration
+ 1059  cd MMMigration/custom/
+ 1060  sudo grep -r "virtual_visa_exp_date_c" modules
+ 1061  cd ..
+ 1062  history | grep "tail"
+ 1063  tail -f /var/log/apache2/error.log | grep "SYNC"
+ 1064  tail -f /var/log/apache2/error.log | grep "prospecto"
+ 1065  cd outlook-api/
+ 1066  node dist/includeUser.js -u deisy@mmmigration.com.au -p S3rvCl1#@
+ 1067  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1068  vim run.log 
+ 1069  ss -lptn
+ 1070  kill 401603
+ 1071  node dist/index.js > run.log 2>&1 &disown
+ 1072  tail -f run.log 
+ 1073  crontab -e
+ 1074  vim ~/onedrive-patch.sh 
+ 1075  vim ~/onedriveapi.sh 
+ 1076  vim ~/onedrive-patch.sh 
+ 1077  tail -f run.log 
+ 1078  exit
+ 1079  ss -lptn
+ 1080  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1081  tail -f run.log 
+ 1082  exit
+ 1083  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1084  tail -f run_job.php 
+ 1085  tail -f suitecrm.log
+ 1086  history | grep "tail"
+ 1087  auto_consultation
+ 1088  tail -f /var/log/apache2/error.log | grep "auto_consultation"
+ 1089  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1090  vim suitecrm.log 
+ 1091  vim /var/log/apache2/error.log
+ 1092  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1093  vim suitecrm.log
+ 1094  vim suitecrm1.log
+ 1095  vim suitecrm_1.log
+ 1096  exit
+ 1097  history | grep "tail"
+ 1098  tail -f /var/log/apache2/error.log | grep "auto_consultation"
+ 1099  cd /var/www/crm.australiaveta.com.develop/
+ 1100  history | grep 'grep'
+ 1101  sudo grep -r "modules/Veta_Recibo/clases/Media.php" MMMigration
+ 1102  tail -f /var/log/apache2/error.log | grep "auto_consultation"
+ 1103  tail -f /var/log/apache2/error.log | grep "skill"
+ 1104  cd outlook-api/
+ 1105  vim json/users.json 
+ 1106  cd 
+ 1107  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1108  vim run.log 
+ 1109  tail -f run.log 
+ 1110  exit
+ 1111  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1112  history | grep "suitecrm.log
+ 1113  history | grep "suitecrm.log"
+ 1114  tail -f suitecrm.log | grep "conteo_documentos"
+ 1115  tail -f suitecrm.log | grep "anszco"
+ 1116  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1117  tail -f run.log 
+ 1118  vim run.log 
+ 1119  tail -f run.log 
+ 1120  :q
+ 1121  tail -f run.log 
+ 1122  tsc
+ 1123  ss -lptn
+ 1124  kill 773625
+ 1125  node dist/index.js > run.log 2>&1 &disown
+ 1126  tail -f run.log 
+ 1127  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1128  tail -f suitecrm.log | grep "anszco"
+ 1129  history | grep "tail"
+ 1130  history | grep "restart"
+ 1131  history | grep "tail"
+ 1132  tail -f /var/log/apache2/error.log | grep "admisiones"
+ 1133  history | grep "tail"
+ 1134  cd /var/www/crm.australiaveta.com.develop/
+ 1135  ls
+ 1136  history | grep "MMMigration"
+ 1137  sudo grep -r "fecha_expiracion" MMMigration
+ 1138  vim outlook-api/json/users.json 
+ 1139  ls
+ 1140  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1141  ss -lptn
+ 1142  crontab -e
+ 1143  tail -f run.log 
+ 1144  df -lh
+ 1145  tail -f run.log 
+ 1146  tsc
+ 1147  ss -lptn
+ 1148  kill 1557392
+ 1149  node dist/index.js > run.log 2>&1 &disown
+ 1150  tail -f run.log 
+ 1151  sudo service apache2 restart
+ 1152  ss -lptn
+ 1153  kill 1558334
+ 1154  crontab -e 
+ 1155  ss -lptn
+ 1156  kill 1559193
+ 1157  nodemon dist/index.js --ignore 'cache/*'
+ 1158  ss -lptn
+ 1159  crontab -e
+ 1160  kill 1559454
+ 1161  ss -lptn
+ 1162  nodemon dist/index.js --ignore 'cache/*'
+ 1163  node dist/index.js > run.log 2>&1 &disown
+ 1164  tail -f run.log 
+ 1165  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1166  tsc --watch
+ 1167  df -h
+ 1168  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1169  tail -f run.log 
+ 1170  cd ../MMMigration/
+ 1171  vim suitecrm.log 
+ 1172  tail -f suitecrm.log | grep "estadodocumento" -A 7 
+ 1173  exit
+ 1174  cd outlook-api/
+ 1175  grep "false" files/* > out.txt 
+ 1176  vim out
+ 1177  vim out.txt 
+ 1178  grep "WRK - 1215" files/* > out.txt 
+ 1179  vim out.txt 
+ 1180  crontab .e
+ 1181  crontab -e
+ 1182  history | grep "tail"
+ 1183  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1184  tail -f suitecrm.log | grep "fecha_cierre_c"
+ 1185  tail -f suitecrm.log | grep "closing_date"
+ 1186  history | grep "grep"
+ 1187  cd ..
+ 1188  fecha_cierre_c
+ 1189  sudo grep -r "fecha_cierre_c" MMMigration
+ 1190  cd MMMigration/
+ 1191  tail -f suitecrm.log | grep "closing_date"
+ 1192  ls -la
+ 1193  tail -f suitecrm.log 
+ 1194  tail -f suitecrm.log | grep "closing_date"
+ 1195  history | grep "tail"
+ 1196  tail -f /var/log/apache2/error.log | grep "filtro"
+ 1197  cd /var/www/crm.australiaveta.com.develop/
+ 1198  grep -r "virtual_visa_exp_date_c" MMMigration/
+ 1199  grep -r "visa_expectation_date_c" MMMigration/
+ 1200  grep -r "Doc_DocsSolicitados" MMMigration/
+ 1201  cd /var/www/crm.australiaveta.com.develop/
+ 1202  grep -r "Doc_DocsSolicitados" MMMigration/
+ 1203  history | grep "tail"
+ 1204  grep -r "string_replace_pdf_name" MMMigration/
+ 1205  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1206  vim run.log 
+ 1207  tail -f run.log 
+ 1208  vim run.log 
+ 1209  ls /var/www/crm.australiaveta.com.develop/upload/pending_document_template.txt
+ 1210  vim run.log 
+ 1211  tail -f run.log 
+ 1212  tsc
+ 1213  ss -lptn
+ 1214  kill 2038048 
+ 1215  node dist/index.js > run.log 2>&1 &disown
+ 1216  ss -lptn
+ 1217  tail -f run.log 
+ 1218  vim run.log 
+ 1219  tail -f run.log 
+ 1220  crontab -e
+ 1221  tail -f run.log 
+ 1222  exit
+ 1223  history | grep "tail"
+ 1224  history | grep "company_name"
+ 1225  tail -f /var/log/apache2/error.log | grep "company_name"
+ 1226  tail -f /var/log/apache2/error.log | grep "pending_docs"
+ 1227  df -h
+ 1228  tail -f /var/log/apache2/error.log | grep "pending_docs"
+ 1229  history | grep "grep"
+ 1230  cd /var/www/crm.australiaveta.com.develop/
+ 1231  sudo grep -r "new Opportu" MMMigration
+ 1232  tail -f /var/log/apache2/error.log | grep "pending_docs"
+ 1233  sudo grep -r "virtual_requeriment_c" MMMigration
+ 1234  tail -f /var/log/apache2/error.log | grep "pending_docs"
+ 1235  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1236  tsc
+ 1237  ss -lptn
+ 1238  kill 2078211
+ 1239  node dist/index.js > run.log 2>&1 &disown
+ 1240  tail -f run.log 
+ 1241  tsc
+ 1242  ss -lptn
+ 1243  kill 2107133 
+ 1244  node dist/index.js > run.log 2>&1 &disown
+ 1245  tail -f run.log 
+ 1246  tsc
+ 1247  kill 2108631
+ 1248  ss -lptn
+ 1249  kill 2110425
+ 1250  node dist/index.js > run.log 2>&1 &disown
+ 1251  tail -f run.log 
+ 1252  ss -lptn
+ 1253  kill 2116967
+ 1254  tsc
+ 1255  node dist/index.js > run.log 2>&1 &disown
+ 1256  tail -f run.log 
+ 1257  ss -lptn
+ 1258  kill 2118262
+ 1259  node dist/index.js > run.log 2>&1 &disown
+ 1260  tail -f run.log 
+ 1261  tail -f /var/log/apache2/error.log | grep "pending_docs"
+ 1262  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1263  tsc --watcj
+ 1264  tsc --watch
+ 1265  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1266  crontab -w
+ 1267  crontab -e
+ 1268  nodemon dist/index.js --ignore 'cache/*'
+ 1269  ss -lptn
+ 1270  kill 2378668 
+ 1271  nodemon dist/index.js --ignore 'cache/*'
+ 1272  ss -lptn
+ 1273  kill 2379822
+ 1274  nodemon dist/index.js --ignore 'cache/*'
+ 1275  ss -lptn
+ 1276  kill 2380003
+ 1277  nodemon dist/index.js --ignore 'cache/*'
+ 1278  node dist/index.js > run.log 2>&1 &disown
+ 1279  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1280  tail -f run.log 
+ 1281  vim run.log 
+ 1282  tsc
+ 1283  ss -lptn
+ 1284  kill 2374679
+ 1285  node dist/index.js > run.log 2>&1 &disown
+ 1286  tail -f run.log 
+ 1287  tsc
+ 1288  ss -lptn
+ 1289  kill 2374972
+ 1290  node dist/index.js > run.log 2>&1 &disown
+ 1291  tail -f run.log 
+ 1292  tsc
+ 1293  ss -lptn
+ 1294  kill 2375691
+ 1295  node dist/index.js > run.log 2>&1 &disown
+ 1296  tail -f run.log 
+ 1297  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1298  tail -f run.log 
+ 1299  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1300  tail -f run.log 
+ 1301  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1302  tail -f run.log 
+ 1303  crontab -e
+ 1304  ss -lptn
+ 1305  kill 2380724 
+ 1306  node dist/index.js > run.log 2>&1 &disown
+ 1307  tail -f run.log 
+ 1308  ss -lptn
+ 1309  cd outlook-api/
+ 1310  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1311  tail -f runGet.log 
+ 1312  tsc
+ 1313  npm i
+ 1314  tsc
+ 1315  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1316  tail -f runGet.log 
+ 1317  vim runGet.log
+ 1318  node -v
+ 1319  sudo npm cache clean -f
+ 1320  sudo npm install -g n
+ 1321  sudo n stable
+ 1322  node -v
+ 1323  ss -lptn
+ 1324  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1325  tail -f runGet.log 
+ 1326  vim runGet.log 
+ 1327  cd outlook-api/
+ 1328  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1329  tail -f runGet.log 
+ 1330  tsc
+ 1331  ss -lptn
+ 1332  kill 2671484 
+ 1333  cd outlook-api/
+ 1334  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1335  tail -f runGet.log 
+ 1336  curl localhost:3030/emails/createFolders?user=chidalgo@australiaveta.com.co
+ 1337  cd outlook-api/
+ 1338  tsc
+ 1339  curl localhost:3030/emails/createFolders?user=chidalgo@australiaveta.com.co
+ 1340  tsc
+ 1341  curl localhost:3030/emails/createFolders?user=chidalgo@australiaveta.com.co
+ 1342  tsc
+ 1343  kill 2672888
+ 1344  tsc
+ 1345  kill 2673615
+ 1346  ss -lptn
+ 1347  cd outlook-api/
+ 1348  vim runGet.log 
+ 1349  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1350  tail -f runGet.log 
+ 1351  ss -lptn
+ 1352  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1353  tail -f runGet.log 
+ 1354  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1355  tail -f runGet.log 
+ 1356  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1357  tail -f runGet.log 
+ 1358  ss -lptn
+ 1359  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1360  tail -f runGet.log 
+ 1361  ss -lptn
+ 1362  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1363  tail -f runGet.log 
+ 1364  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1365  tsc
+ 1366  ss -lptn
+ 1367  kill 2674564
+ 1368  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1369  node dist/index.js -p 8080 > run.log 2>&1 &disown
+ 1370  tail -f run
+ 1371  tail -f run.log 
+ 1372  cd /var/www/crm.australiaveta.com.develop/MMMigration/custom/modules/Emails/metadata
+ 1373  sudo chmod 775 MMMigration -R
+ 1374  sudo chmod 775 *
+ 1375  vim detailviewdefs.php 
+ 1376  cd /var/www/crm.australiaveta.com.develop/MMMigration
+ 1377  tail -f suitecrm.log | grep "createTickets" -A 7 
+ 1378  vim suitecrm.log
+ 1379  tail -f suitecrm.log | grep "createTickets" -A 7 
+ 1380  vim suitecrm.log
+ 1381  tail -f suitecrm.log | grep "createTickets" -A 7 
+ 1382  vim suitecrm.log
+ 1383  tail -f suitecrm.log | grep "createTickets" -A 7 
+ 1384  cd ~/outlook-api/
+ 1385  tail -f runGet.log
+ 1386  vim runGet.log
+ 1387  tsc
+ 1388  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1389  tail -f runGet.log
+ 1390  tsc
+ 1391  ss -lptn
+ 1392  kill 2706182
+ 1393  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1394  tsc
+ 1395  kill 2707420
+ 1396  cd outlook-api/
+ 1397  curl localhost:3030/emails/createFolders?user=katerin@mmmigration.com.au
+ 1398  tsc
+ 1399  ss -lptn
+ 1400  kill 2708133
+ 1401  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1402  curl localhost:3030/emails/createFolders?user=lauracamila@mmmigration.com.au
+ 1403  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1404  ls
+ 1405  rm runGet.log 
+ 1406  tail -f run.log 
+ 1407  cd ~/outlook-api/
+ 1408  tail -f runGet.log 
+ 1409  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1410  tail -f runGet.log 
+ 1411  vim runGet.log 
+ 1412  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1413  tail -f runGet.log 
+ 1414  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1415  tail -f runGet.log 
+ 1416  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1417  tail -f suitecrm.log | grep "update" -A 7 
+ 1418  cd ~/outlook-api/
+ 1419  tsc
+ 1420  ss -lptn
+ 1421  kill 2708456
+ 1422  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1423  tail -f runGet.log 
+ 1424  exit
+ 1425  history | grep "grep"
+ 1426  cd /var/www/crm.australiaveta.com.develop/
+ 1427  sudo grep -r "LBL_FROM" MMMigration
+ 1428  sudo grep -r "from_addr" MMMigration
+ 1429  sudo grep -r "'from_addr" MMMigration
+ 1430  sudo grep -r "from_addr_name_infos" MMMigration
+ 1431  sudo grep -r "is_only_plain_text" MMMigration
+ 1432  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1433  vim suitecrm.log 
+ 1434  cd ~/outlook-api/
+ 1435  tail -f runGet.log 
+ 1436  tsc
+ 1437  ss -lptn
+ 1438  kill 2708764
+ 1439  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1440  tail -f runGet.log 
+ 1441  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1442  tail -f runGet.log 
+ 1443  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1444  tail -f runGet.log 
+ 1445  curl localhost:3030/emails/createFolders?user=deisy@mmmigration.com.au
+ 1446  cd outlook-api/
+ 1447  vim json/users.json 
+ 1448  curl localhost:3030/emails/createFolders?user=ana@mmmigration.com.au
+ 1449  cd outlook-api/
+ 1450  tsc
+ 1451  node dist/updatecron.js
+ 1452  vim /home/ubuntu/outlook-api/dist/outlook/index.js
+ 1453  vim /home/ubuntu/outlook-api/dist/dependencies/mysql-connection/index.js
+ 1454  tsc
+ 1455  node dist/updatecron.js
+ 1456  cd outlook-api/
+ 1457  node dist/updatecron.js
+ 1458  exit
+ 1459  cd outlook-api/
+ 1460  tail -f runGet.log 
+ 1461  vim runGet.log 
+ 1462  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1463  tail -f runGet.log 
+ 1464  tsc
+ 1465  ss -lptn
+ 1466  kill 3011551 
+ 1467  cd outlook-api/
+ 1468  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1469  tail -f runGet.log 
+ 1470  ls
+ 1471  crontab -e
+ 1472  cp run.sh read.sh
+ 1473  vim read.sh 
+ 1474  ls -lha
+ 1475  crontab -e
+ 1476  exit
+ 1477  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1478  tail -f run.log 
+ 1479  cd outlook-api/
+ 1480  tail -f runGet.log 
+ 1481  tsc
+ 1482  ss -lptn
+ 1483  kill 3011948
+ 1484  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1485  tail -f runGet.log 
+ 1486  vim configuracion.json 
+ 1487  ss -lptn
+ 1488  tsc
+ 1489  kill 3046569
+ 1490  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1491  tail -f run.log 
+ 1492  tsc
+ 1493  kill 3046849
+ 1494  cd outlook-api/
+ 1495  ls
+ 1496  vim cron.log 
+ 1497  crontab -e
+ 1498  vim read.sh 
+ 1499  ./read.sh
+ 1500  vim cron.log 
+ 1501  ls src/
+ 1502  ./read.sh
+ 1503  vim read.sh 
+ 1504  ./read.sh
+ 1505  tsc
+ 1506  node -v
+ 1507  ls
+ 1508  vim tsconfig.json 
+ 1509  tsc
+ 1510  ./read.sh
+ 1511  vim package.json 
+ 1512  exit
+ 1513  cd outlook-api/
+ 1514  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1515  tail -f runGet.log 
+ 1516  tsc
+ 1517  ss -lptn
+ 1518  kill 3046992
+ 1519  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1520  tail -f runGet.log 
+ 1521  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1522  tail -f run.log 
+ 1523  vim run.log 
+ 1524  tsc
+ 1525  ss -lptn
+ 1526  kill 3242676
+ 1527  node dist/index.js -p 8080 > run.log 2>&1 &disown
+ 1528  tail -f run.log 
+ 1529  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1530  cd /home/ubuntu/outlook-api
+ 1531  ss -lptn
+ 1532  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1533  tail -f runGet.log 
+ 1534  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1535  tail -f runGet.log 
+ 1536  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1537  tail -f run.log 
+ 1538  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1539  vim suitecrm.log
+ 1540  vim suitecrm1.log
+ 1541  vim suitecrm__1.log
+ 1542  vim suitecrm_1.log
+ 1543  cd outlook-api/
+ 1544  ss -lptn
+ 1545  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1546  tail -f runGet.log 
+ 1547  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1548  tail -f runGet.log 
+ 1549  cd outlook-api/
+ 1550  ls
+ 1551  tsc
+ 1552  vim cron.log 
+ 1553  ss -lptn
+ 1554  kill 3370823
+ 1555  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1556  tail -f runGet.log 
+ 1557  exit
+ 1558  ss -lptn
+ 1559  cd outlook-api/
+ 1560  vim configuracion.json 
+ 1561  kill 3406231
+ 1562  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1563  tsc
+ 1564  vim configuracion.json
+ 1565  kill 3617441
+ 1566  cd outlook-api/
+ 1567  tsc
+ 1568  ss -lptn
+ 1569  kill 3617729
+ 1570  kill 3617728
+ 1571  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1572  pwd
+ 1573  ls -lha
+ 1574  sudo chmod 775 recompile.sh 
+ 1575  ss -lptn
+ 1576  ./recompile.sh 
+ 1577  ss -lptn
+ 1578  cd outlook-api/
+ 1579  tail -f runGet.log 
+ 1580  vim runGet.log 
+ 1581  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1582  tail -f runGet.log 
+ 1583  vim run.log 
+ 1584  vim runGet.log 
+ 1585  tail -f runGet.log 
+ 1586  tail -f runGet.log clear
+ 1587  clear
+ 1588  tail -f runGet.log clear
+ 1589  tail -f runGet.log
+ 1590  vim runGet.log 
+ 1591  tail -f runGet.log
+ 1592  vim runGet.log 
+ 1593  tail -f runGet.log
+ 1594  exit
+ 1595  cd outlook-api/
+ 1596  ./recompile.sh 
+ 1597  vim debug 
+ 1598  echo '' > debug
+ 1599  ./recompile.sh 
+ 1600  vim debug 
+ 1601  echo '' > debug
+ 1602  ./recompile.sh 
+ 1603  vim debug 
+ 1604  echo '' > debug
+ 1605  ./recompile.sh 
+ 1606  echo '' > debug
+ 1607  vim debug 
+ 1608  curl localhost:3030/emails?user=ana@mmmigration.com.au&email_id=AAMkADI5MWY4NTE3LWE3MmMtNDkxNi1hNDM1LTYwM2IwNzNhNjg3MwBGAAAAAAAa_mtOssytRK96HAsDBNErBwDZy5IlhDIjRKLWVtlmfHFlAAAAAAEMAADZy5IlhDIjRKLWVtlmfHFlAABf-fXMAAA= > out.txt
+ 1609  vim out.txt 
+ 1610  curl localhost:3030/emails?user=lauracamila@mmmigration.com.au&email_id=AAMkADI5MWY4NTE3LWE3MmMtNDkxNi1hNDM1LTYwM2IwNzNhNjg3MwBGAAAAAAAa_mtOssytRK96HAsDBNErBwDZy5IlhDIjRKLWVtlmfHFlAAAAAAEMAADZy5IlhDIjRKLWVtlmfHFlAABf-fXMAAA= > out.txt
+ 1611  echo '' > debug
+ 1612  ./recompile.sh 
+ 1613  vim debug 
+ 1614  ./recompile.sh 
+ 1615  echo '' > debug
+ 1616  ./recompile.sh 
+ 1617  echo '' > debug
+ 1618  vim debug 
+ 1619  echo '' > debug
+ 1620  ./recompile.sh 
+ 1621  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1622  tail -f run.log 
+ 1623  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1624  tail -f suitecrm.log
+ 1625  tail -f suitecrm.log | grep "\[VETA\]" -A 7 
+ 1626  vim suitecrm.log
+ 1627  tail -f suitecrm.log | grep "\[VETA\]" -A 7 
+ 1628  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1629  vim suitecrm.log 
+ 1630  echo '' > suitecrm.log
+ 1631  sudo echo '' > suitecrm.log
+ 1632  vim suitecrm.log 
+ 1633  ls
+ 1634  cd outlook-api/
+ 1635  tail -f runGet.log 
+ 1636  grep "Prueba img \[ \- \]" files/* > out.txt 
+ 1637  vim out.txt 
+ 1638  exit
+ 1639  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1640  vim run.log 
+ 1641  cd outlook-api/
+ 1642  ss -lptn
+ 1643  vim runGet.log 
+ 1644  ls
+ 1645  cd outlook-api/
+ 1646  tail -f runGet.log 
+ 1647  vim runGet.log 
+ 1648  tail -f runGet.log 
+ 1649  history | grep "tail"
+ 1650  tail -f /var/log/apache2/error.log | grep "procesos_visas"
+ 1651  history | grep "tail"
+ 1652  pwd
+ 1653  cd /var/www/crm.australiaveta.com.develop/
+ 1654  cd MMMigration/
+ 1655  pwd
+ 1656  history | grep "grep"
+ 1657  cd..
+ 1658  cd ..
+ 1659  cls
+ 1660  clear
+ 1661  history | grep "grep"
+ 1662  cls
+ 1663  clear
+ 1664  sudo grep -r "visa_expire_3rd_dependent_date_c" MMMigration
+ 1665  clear
+ 1666  sudo grep -r "third_dependent_c" MMMigration
+ 1667  history | grep "tail"
+ 1668  cd MMMigration/
+ 1669  tail -f suitecrm.log
+ 1670  cd ..
+ 1671  sudo grep -r "left join nvc_companies_cstm on nvc_companies.id = nvc_companies_cstm.id_c" MMMigration
+ 1672  cd MMMigration/
+ 1673  tail -f suitecrm.log
+ 1674  history | grep "procesos_visas"
+ 1675  tail -f /var/log/apache2/error.log | grep "procesos_visas"
+ 1676  history | grep "grep"
+ 1677  cd /var/www/crm.australiaveta.com.develop/
+ 1678  email_docs_portal_c
+ 1679  sudo grep -r "email_docs_portal_c" MMMigration
+ 1680  exit
+ 1681  ls
+ 1682  exit
+ 1683  ls
+ 1684  ss -lptn
+ 1685  vim /etc/nginx/sites-enabled/default 
+ 1686  sudo vim /etc/nginx/sites-enabled/default 
+ 1687  cd veta-whatsapp-api/
+ 1688  node dist/index.js -p 6060 > run.log 2>&1 &disown
+ 1689  ss -lptn
+ 1690  vim run.log 
+ 1691  npm i
+ 1692  tsc 
+ 1693  node dist/index.js -p 6060 > run.log 2>&1 &disown
+ 1694  ss -lptn
+ 1695  vim run.log 
+ 1696  node -b
+ 1697  node -v
+ 1698  tsc -v
+ 1699  npm i -g typescript
+ 1700  sudo npm i -g typescript
+ 1701  tsc -v
+ 1702  tsc
+ 1703  node dist/index.js -p 6060 > run.log 2>&1 &disown
+ 1704  ss -lptn
+ 1705  sudo service nginx restart
+ 1706  sudo vim /etc/nginx/sites-enabled/default 
+ 1707  sudo service nginx restart
+ 1708  sudo vim /etc/nginx/sites-enabled/default 
+ 1709  vim /var/www/crm.australiaveta.com.develop/MMMigration
+ 1710  cd /var/www/crm.australiaveta.com.develop/MMMigration
+ 1711  ls
+ 1712  sudo vim /etc/nginx/sites-enabled/default 
+ 1713  cd ..
+ 1714  ls
+ 1715  vim MMMigration/index.php 
+ 1716  grep -Rnw '/var/www/' -e 'main.65d8c6e8f7e67a17.js'
+ 1717  grep -Rnw '/home/ubuntu' -e 'main.65d8c6e8f7e67a17.js'
+ 1718  sudo grep -Rnw '/home/ubuntu' -e 'main.65d8c6e8f7e67a17.js'
+ 1719  sudo vim /etc/nginx/sites-enabled/default 
+ 1720  sudo vim /etc/nginx/nginx.conf 
+ 1721  sudo vim /etc/nginx/sites-enabled/default 
+ 1722  ss -lptn
+ 1723  sudo ss -lptn
+ 1724  sudo service nginx restart
+ 1725  cd /home/ubuntu/
+ 1726  cd veta-whatsapp-api/
+ 1727  tail -f run.log 
+ 1728  nginx -v
+ 1729  sudo vim /etc/nginx/sites-enabled/default 
+ 1730  sudo service nginx restart
+ 1731  sudo vim /etc/nginx/nginx.conf 
+ 1732  vim /var/log/nginx/error.log;
+ 1733  tail -f /var/log/nginx/error.log;
+ 1734  sudo vim /etc/nginx/sites-enabled/default 
+ 1735  sudo service nginx restart
+ 1736  tail -f /var/log/nginx/error.log;
+ 1737  sudo vim /etc/nginx/sites-enabled/default 
+ 1738  sudo service nginx restart
+ 1739  tail -f /var/log/nginx/error.log;
+ 1740  sudo vim /etc/nginx/sites-enabled/default 
+ 1741  sudo service nginx restart
+ 1742  tail -f /var/log/nginx/error.log;
+ 1743  sudo vim /etc/nginx/sites-enabled/default 
+ 1744  sudo service nginx restart
+ 1745  vim run.log
+ 1746  vim configuracion.json 
+ 1747  cat /var/www/crm.australiaveta.com.develop/signatures/
+ 1748  cat /var/www/crm.australiaveta.com.develop/firmas-api/configuracion.json 
+ 1749  vim /var/www/crm.australiaveta.com.develop/MMMigration/config.php 
+ 1750  vim configuracion.json 
+ 1751  node dist/index.js -p 6060 > run.log 2>&1 &disown
+ 1752  tail -f run.log 
+ 1753  sudo grep -Rnw 'src' -e 'algo'
+ 1754  vim src/components/users/index.ts 
+ 1755  vim run.log 
+ 1756  vim src/components/users/index.ts 
+ 1757  tail -f run.log 
+ 1758  vim run.log 
+ 1759  vim src/dependencies/components/index.ts 
+ 1760  vim src/routes.ts 
+ 1761  vim src/components/users/index.ts 
+ 1762  tsc
+ 1763  node dist/index.js -p 6060 > run.log 2>&1 &disown
+ 1764  tail -f run.log 
+ 1765  :q
+ 1766  pwd
+ 1767  vim configuracion.json 
+ 1768  node dist/index.js -p 6060 > run.log 2>&1 &disown
+ 1769  tail -f run.log 
+ 1770  node dist/index.js -p 6060 > run.log 2>&1 &disown
+ 1771  tail -f run.log 
+ 1772  tsc
+ 1773  ss -lptn
+ 1774  kill 1815459
+ 1775  kill 1815453
+ 1776  cd veta-whatsapp-api/
+ 1777  node dist/index.js -p 6060 > run.log 2>&1 &disown
+ 1778  tail -f run.log 
+ 1779  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1780  tail -f run.log 
+ 1781  tsc
+ 1782  ss -lptn
+ 1783  kill 1894533
+ 1784  node dist/index.js -p 6060 > run.log 2>&1 &disown
+ 1785  tail -f run.log 
+ 1786  ss -lptn
+ 1787  node dist/index.js > run.log 2>&1 &disown
+ 1788  tail -f run.log 
+ 1789  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1790  tail -f run.log 
+ 1791  exit
+ 1792  ls
+ 1793  exit
+ 1794  history | grep "grep"
+ 1795  }cd /var/www/crm.australiaveta.com.develop/
+ 1796  cd /var/www/crm.australiaveta.com.develop/
+ 1797  sudo grep -r "bullist" MMMigration
+ 1798  sudo grep -r "fontsizeselect" MMMigration
+ 1799  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1800  tsc
+ 1801  ss -lptn
+ 1802  kill 2125118
+ 1803  node dist/index.js > run.log 2>&1 &disown
+ 1804  tail -f run.log 
+ 1805  vim /var/www/crm.australiaveta.com.develop/onedrive-endpoint/dist/approve.js
+ 1806  tail -f run.log 
+ 1807  tsc
+ 1808  ls
+ 1809  ls ~
+ 1810  vim ~/onedrive-patch.sh 
+ 1811  tail -f run.log 
+ 1812  tsc
+ 1813  vim ~/onedrive-patch.sh 
+ 1814  ~/onedrive-patch.sh 
+ 1815  tail -f run.log 
+ 1816  tsc
+ 1817  ~/onedrive-patch.sh 
+ 1818  tail -f run.log 
+ 1819  tsc
+ 1820  ~/onedrive-patch.sh 
+ 1821  tail -f run.log 
+ 1822  cd /var/www/crm.australiaveta.com.develop/
+ 1823  ls
+ 1824  cd cache/
+ 1825  ls
+ 1826  rm -rf *
+ 1827  sudo rm -rf *
+ 1828  history | grep "tail"
+ 1829  tail -f /var/log/apache2/error.log | grep "Email_Color"
+ 1830  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1831  tsc
+ 1832  ss -lptn
+ 1833  kill 2526210
+ 1834  node dist/index.js > run.log 2>&1 &disown
+ 1835  tail -f run.log 
+ 1836  node dist/index.js > run.log 2>&1 &disown
+ 1837  tail -f run.log 
+ 1838  ss -lptn
+ 1839  cd ~/outlook-api/
+ 1840  ls dist/
+ 1841  cd /var/www/crm.australiaveta.com.develop/
+ 1842  history | grep "grep"
+ 1843  sudo grep -r "Form_956_Employer-2022.pdf" MMMigration
+ 1844  find / -type f -name "Form_956_Employer-2022.pdf"
+ 1845  find MMMigration -type f -name "Form_956_Employer-2022.pdf"
+ 1846  cd outlook-api/
+ 1847  node dist/includeUser.js -u ricardo@mmmigration.com.au -p Ric2024@#MMM
+ 1848  exit
+ 1849  df -h
+ 1850  cd /var/www/crm.australiaveta.com.develop/
+ 1851  history | grep "grep"
+ 1852  sudo grep -r "[18:32] Pilar Gomez" MMMigration
+ 1853  sudo grep -r "Consultation_Book" MMMigration
+ 1854  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1855  tsc
+ 1856  ss -lptn
+ 1857  vim run.log 
+ 1858  kill 3360061
+ 1859  ss -lptn
+ 1860  tail -f run.log 
+ 1861  exit
+ 1862  cd /var/www/crm.australiaveta.com.develop/
+ 1863  sudo grep -r "Consultation_Follow_Up" MMMigration
+ 1864  cd outlook-api/
+ 1865  ls
+ 1866  tsc
+ 1867  ss -lptn
+ 1868  history
+ 1869  vim /etc/nginx/sites-enabled/default 
+ 1870  ss -lptn
+ 1871  vim /etc/nginx/sites-enabled/default 
+ 1872  sudo vim /etc/nginx/sites-enabled/default 
+ 1873  sudo service nginx restart
+ 1874  vim configuracion.json 
+ 1875  kill 3621610 
+ 1876  node dist/listenServer.js -p 3030 > runGet.log 2>&1 &disown
+ 1877  tail -f runGet.log 
+ 1878  cat configuracion.json 
+ 1879  tail run.log
+ 1880  tail -f run.log
+ 1881  tsc
+ 1882  tail -f run.log
+ 1883  crontab -e
+ 1884  ls
+ 1885  ./run.sh 
+ 1886  node -v
+ 1887  tsc -v
+ 1888  ls
+ 1889  vim tsconfig.json 
+ 1890  rm -rf dist/*
+ 1891  tsc
+ 1892  ./run.sh 
+ 1893  cat package.json 
+ 1894  node -v
+ 1895  cat ./run.sh 
+ 1896  /usr/bin/node -v
+ 1897  /bin/sh/node -v
+ 1898  which node 
+ 1899  vim ./run.sh 
+ 1900  tsc
+ 1901  ./run.sh 
+ 1902  tail -f run.log 
+ 1903  ./run.sh
+ 1904  grep "prueba 2" files/* > out.txt 
+ 1905  vim out.txt 
+ 1906  grep "Prueba 2fa" files/* > out.txt 
+ 1907  vim out.txt 
+ 1908  tail -f run.
+ 1909  tail -f run.log 
+ 1910  vim run.log 
+ 1911  echo '' > run.log 
+ 1912  tail -f run.log 
+ 1913  crontab -e
+ 1914  vim run.sh 
+ 1915  ./run.sh
+ 1916  vim run.log 
+ 1917  vim /etc/rsyslog.conf
+ 1918  vim /var/mail/ubuntu
+ 1919  ls /var/mail/
+ 1920  ls -lha
+ 1921  crontab -e
+ 1922  ls
+ 1923  vim cron.log 
+ 1924  crontab -e
+ 1925  ls
+ 1926  vim cronrun.log 
+ 1927  rm cronrun.log 
+ 1928  tail -f run.log 
+ 1929  tail -f cron.log 
+ 1930  vim run.sh 
+ 1931  tail -f cron.log 
+ 1932  vim run.sh 
+ 1933  vim run.log
+ 1934  sudo su
+ 1935  vim run.sh 
+ 1936  tail -f last_run.log
+ 1937  cat run.sh
+ 1938  /usr/local/bin/node -v
+ 1939  tail -f last_run.log
+ 1940  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1941  vim suitecrm.log 
+ 1942  ls 
+ 1943  cd outlook-api/
+ 1944  vim run.log 
+ 1945  exit
+ 1946  cd /var/www/crm.australiaveta.com.develop/MMMigration/custom/modules/Veta_Visa/js
+ 1947  tsc
+ 1948  cd ../metadata/
+ 1949  sudo chmod 775 recompile.sh 
+ 1950  sudo chmod 777 *
+ 1951  exot
+ 1952  exit
+ 1953  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1954  tail -f suitecrm.log | grep "cost_agreement" -A 7 
+ 1955  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1956  tail -f suitecrm.log | grep "cost_agreement" -A 7 
+ 1957  ls /var/www/crm.australiaveta.com.develop/upload/COST AGREEMENT-Prueba Alfonsito-210.pdf
+ 1958  ls "/var/www/crm.australiaveta.com.develop/upload/COST AGREEMENT-Prueba Alfonsito-210.pdf"
+ 1959  tail -f suitecrm.log | grep "cost_agreement" -A 7 
+ 1960  ls "/var/www/crm.australiaveta.com.develop/upload/COST AGREEMENT-Prueba Alfonsito-210.pdf"
+ 1961  tail -f suitecrm.log | grep "cost_agreement" -A 7 
+ 1962  ls "/var/www/crm.australiaveta.com.develop/MMMigration/COST AGREEMENT-Prueba Alfonsito-210.pdf"
+ 1963  exit
+ 1964  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/
+ 1965  tail -f run.log 
+ 1966  vim  /var/www/crm.australiaveta.com.develop/onedrive-endpoint/dist/index.js
+ 1967  tsc
+ 1968  ~/onedrive-patch.sh 
+ 1969  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1970  vim suitecrm.log
+ 1971  cd custom/modules/Veta_Requerimiento
+ 1972  ls
+ 1973  cd metadata/
+ 1974  sudo chmod 777 *
+ 1975  cd ~
+ 1976  vim /var/log/apache2/error.log
+ 1977  exit
+ 1978  grep "token=function\(\)" var/www/* > out.txt 
+ 1979  cd /var/www/crm.australiaveta.com.develop/MMMigration/custom/modules/Veta_Profile/js
+ 1980  npm i
+ 1981  tsc
+ 1982  cd ../metadata/
+ 1983  sudo chmod 777 *
+ 1984  cd ../js/
+ 1985  tsc
+ 1986  tsc --watch
+ 1987  exit
+ 1988  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1989  vim suitecrm.log
+ 1990  vim /var/log/apache2/error.log
+ 1991  vim suitecrm.log
+ 1992  ls suitecrm_1.log 
+ 1993  vim suitecrm_1.log 
+ 1994  cd custom/modules/Veta_Profile/js/
+ 1995  tsc
+ 1996  tsc --watch
+ 1997  cd /var/www/crm.australiaveta.com.develop/MMMigration/
+ 1998  vim suitecrm.log
+ 1999  cd /var/www/crm.australiaveta.com.develop/MMMigration/modules/Veta_Profile/metadata
+ 2000  sudo chmod 777 *
+ 2001  cd /var/www/crm.australiaveta.com.develop/MMMigration/custom/modules/Veta_Profile/js
+ 2002  npm i
+ 2003  ls
+ 2004  npm i
+ 2005  tsc
+ 2006  npm audit
+ 2007  npm audit fix
+ 2008  tsc
+ 2009  cd /var/www/crm.australiaveta.com.develop/MMMigration/custom/modules/Veta_Requerimiento/metadata
+ 2010  sudo chmod 777 *
+ 2011  cd /var/www/crm.australiaveta.com.develop/MMMigration/custom/modules/Veta_Profile/js/src
+ 2012  cd ..
+ 2013  tsc --watch
+ 2014  cd /var/www/crm.australiaveta.com.develop/MMMigration/modules/Veta_Profile/metadata/subpanels
+ 2015  sudo chmod 777 *
+ 2016  cd /var/www/crm.australiaveta.com.develop/onedrive-endpoint/src
+ 2017  cd ..
+ 2018  tsc
+ 2019  ~/onedrive-patch.sh 
+ 2020  tail -f run.log 
+ 2021  tsc
+ 2022  tail -f run.log 
+ 2023  cd ../MMMigration/
+ 2024  tail -f suitecrm.log | grep "update emails" -A 7 
+ 2025  history
+ 2026  history > out.txt
