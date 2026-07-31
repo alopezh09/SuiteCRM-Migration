@@ -1,0 +1,8 @@
+<?php
+ // created: 2023-12-19 20:14:22
+$dictionary['Veta_Requerimiento']['fields']['visa_expire_3rd_dependent_date_c']['inline_edit']='1';
+$dictionary['Veta_Requerimiento']['fields']['visa_expire_3rd_dependent_date_c']['options']='date_range_search_dom';
+$dictionary['Veta_Requerimiento']['fields']['visa_expire_3rd_dependent_date_c']['labelValue']='Visa expire 3rd Dependent date';
+$dictionary['Veta_Requerimiento']['fields']['visa_expire_3rd_dependent_date_c']['enable_range_search']='1';
+
+ ?>

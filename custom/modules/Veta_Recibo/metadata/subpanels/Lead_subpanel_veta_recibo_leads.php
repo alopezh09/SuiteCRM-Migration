@@ -1,0 +1,46 @@
+<?php
+// created: 2022-07-12 16:07:09
+$subpanel_layout['list_fields'] = array (
+  'name' => 
+  array (
+    'vname' => 'LBL_NAME',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'width' => '45%',
+    'default' => true,
+  ),
+  'tipovisa' => 
+  array (
+    'type' => 'dynamicenum',
+    'studio' => 'visible',
+    'label' => 'Visa Type',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'tipovisa',
+  ),
+  'name_visatype' => 
+  array (
+    'type' => 'varchar',
+    'studio' => 'visible',
+    'label' => 'Name Visa Type',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'name' => 'name_visaType',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'target_module' => NULL,
+    'target_record_key' => NULL,
+  ),
+  'description' => 
+  array (
+    'type' => 'text',
+    'studio' => 'visible',
+    'label' => 'Description',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'name' => 'description',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'target_module' => NULL,
+    'target_record_key' => NULL,
+  ),
+);

@@ -1,0 +1,18 @@
+{
+  "name": "editview",
+  "version": "1.0.0",
+  "description": "Controlador para formulario de edicion de veta requerimiento",
+  "main": "bin/editview.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christian Hidalgo",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.5.14",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "form-data": "^4.0.0"
+  }
+}

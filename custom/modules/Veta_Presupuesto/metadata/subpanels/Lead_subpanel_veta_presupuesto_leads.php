@@ -1,0 +1,58 @@
+<?php
+// created: 2022-07-12 16:07:19
+$subpanel_layout['list_fields'] = array (
+  'name' => 
+  array (
+    'vname' => 'LBL_NAME',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'width' => '45%',
+    'default' => true,
+  ),
+  'tipo_visa' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'vname' => 'LBL_TIPO_VISA',
+    'id' => 'VETA_TIPOSVISA_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'widget_class' => 'SubPanelDetailViewLink',
+    'target_module' => 'Veta_TiposVisa',
+    'target_record_key' => 'veta_tiposvisa_id_c',
+  ),
+  'total_visa' => 
+  array (
+    'type' => 'currency',
+    'default' => true,
+    'vname' => 'LBL_TOTAL_VISA',
+    'currency_format' => true,
+    'width' => '10%',
+  ),
+  'name_visatype' => 
+  array (
+    'type' => 'varchar',
+    'studio' => 'visible',
+    'label' => 'Name Visa Type',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'name' => 'name_visaType',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'target_module' => NULL,
+    'target_record_key' => NULL,
+  ),
+  'description' => 
+  array (
+    'type' => 'text',
+    'studio' => 'visible',
+    'label' => 'Description',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+    'name' => 'description',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'target_module' => NULL,
+    'target_record_key' => NULL,
+  ),
+);

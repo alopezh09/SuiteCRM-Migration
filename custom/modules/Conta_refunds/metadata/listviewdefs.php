@@ -1,0 +1,69 @@
+<?php
+$module_name = 'Conta_refunds';
+$listViewDefs [$module_name] = 
+array (
+  'NAME' => 
+  array (
+    'width' => '32%',
+    'label' => 'LBL_NAME',
+    'default' => true,
+    'link' => true,
+  ),
+  'VETA_RECIBO_CONTA_REFUNDS_1_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_VETA_RECIBO_CONTA_REFUNDS_1_FROM_VETA_RECIBO_TITLE',
+    'id' => 'VETA_RECIBO_CONTA_REFUNDS_1VETA_RECIBO_IDA',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'AMOUNT' => 
+  array (
+    'type' => 'currency',
+    'label' => 'LBL_AMOUNT',
+    'currency_format' => true,
+    'width' => '10%',
+    'default' => true,
+  ),
+  'DATE_ENTERED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_ENTERED',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'CATEGORY_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_CATEGORY',
+    'width' => '10%',
+  ),
+  'REFUND_TO' => 
+  array (
+    'type' => 'enum',
+    'studio' => 'visible',
+    'label' => 'LBL_REFUND_TO ',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'DATE_MODIFIED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_MODIFIED',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '9%',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'module' => 'Employees',
+    'id' => 'ASSIGNED_USER_ID',
+    'default' => true,
+  ),
+);
+;
+?>

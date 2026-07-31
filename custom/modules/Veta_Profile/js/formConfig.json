@@ -1,0 +1,250 @@
+{
+    "localizacion_c": {
+        "field": {
+            "name": "localizacion_c",
+            "type": "multienum",
+            "label": "Localización",
+            "required": true
+        },
+        "dynamics": {
+            "[[Offshore]]": [
+                "has_solvency",
+                "solvency_procendece",
+                "solvency_value",
+                "visa_denied",
+                "has_children",
+                "children_travel"
+            ],
+            "[[Onshore]]":[
+                "time",
+                "visa_type",
+                "current_insurance",
+                "desired_insurance",
+                "visa_renewed",
+                "visa_spouse_renewed",
+                "visa_renewed_time",
+                "budget",
+                "has_english_exam",
+                "listening_level",
+                "speaking_level",
+                "reading_level",
+                "written_level"
+            ]
+
+        }
+    },
+    "has_solvency": {
+        "field": {
+            "name": "has_solvency",
+            "type": "bool",
+            "label": "Cuenta con la Solvencia",
+            "required": true
+        }
+    },
+    "solvency_procendece": {
+        "field": {
+            "name": "solvency_procendece",
+            "type": "enum",
+            "label": "Procedencia",
+            "required": true
+        }
+    },
+    "solvency_value": {
+        "field": {
+            "name": "solvency_value",
+            "type": "number",
+            "label": "Valor total disponible de la Solvencia",
+            "required": true
+        }
+    },
+    "visa_denied": {
+        "field": {
+            "name": "visa_denied",
+            "type": "bool",
+            "label": "Localización",
+            "required": true
+        },
+        "dynamics": {
+            "true": [
+                "country_denied"
+            ]
+        }
+    },
+    "has_children": {
+        "field": {
+            "name": "has_children",
+            "type": "bool",
+            "label": "Tiene Hijos",
+            "required": true
+        }
+    },
+    "children_travel": {
+        "field": {
+            "name": "children_travel",
+            "type": "bool",
+            "label": "Viajaran Hijos",
+            "required": true
+        }
+    },
+    "country_denied":{
+        "field": {
+            "name": "country_denied",
+            "type": "text",
+            "label": "A que país",
+            "required": true
+        }
+    },
+    "time":{
+        "field": {
+            "name": "time",
+            "type": "text",
+            "label": "Tiempo en australia",
+            "required": true
+        }
+    },
+    "visa_type":{
+        "field": {
+            "name": "visa_type",
+            "type": "text",
+            "label": "Tipo de visa",
+            "required": true
+        },
+        "dynamics":{
+            "Estudiante":[
+                "institute_name",
+                "course_name",
+                "course_start_date",
+                "course_end_date",
+                "has_other_courses"
+            ]
+        }
+    },
+    "current_insurance":{
+        "field": {
+            "name": "current_insurance",
+            "type": "text",
+            "label": "Aseguradora actual",
+            "required": true
+        }
+    },
+    "desired_insurance":{
+        "field": {
+            "name": "desired_insurance",
+            "type": "text",
+            "label": "Aseguradora deseada",
+            "required": true
+        }
+    },
+    "visa_renewed":{
+        "field": {
+            "name": "visa_renewed",
+            "type": "text",
+            "label": "Cuantas veces se ha renovado la visa",
+            "required": true
+        }
+    },
+    "visa_spouse_renewed":{
+        "field": {
+            "name": "visa_spouse_renewed",
+            "type": "text",
+            "label": "Cuantas veces ha renovado su pareja la visa",
+            "required": true
+        }
+    },
+    "visa_renewed_time":{
+        "field": {
+            "name": "visa_renewed_time",
+            "type": "text",
+            "label": "Por cuanto tiempo se ha renovado su visa",
+            "required": true
+        }
+    },
+    "budget":{
+        "field": {
+            "name": "budget",
+            "type": "text",
+            "label": "Presupuesto para iniciar el proceso",
+            "required": true
+        }
+    },
+    "has_english_exam":{
+        "field": {
+            "name": "has_english_exam",
+            "type": "text",
+            "label": "Ha tomado examen",
+            "required": true
+        }
+    },
+    "listening_level":{
+        "field": {
+            "name": "listening_level",
+            "type": "text",
+            "label": "Nivel Listening",
+            "required": true
+        }
+    },
+    "speaking_level":{
+        "field": {
+            "name": "speaking_level",
+            "type": "text",
+            "label": "Nivel Speaking",
+            "required": true
+        }
+    },
+    "reading_level":{
+        "field": {
+            "name": "reading_level",
+            "type": "text",
+            "label": "Nivel Reading",
+            "required": true
+        }
+    },
+    "written_level":{
+        "field": {
+            "name": "written_level",
+            "type": "text",
+            "label": "Nivel Written",
+            "required": true
+        }
+    },
+    "institute_name":{
+        "field": {
+            "name": "institute_name",
+            "type": "text",
+            "label": "Nombre de institución donde se estudie",
+            "required": true
+        }
+    },
+    "course_name":{
+        "field": {
+            "name": "course_name",
+            "type": "text",
+            "label": "Curso actual",
+            "required": true
+        }
+    },
+    "course_start_date":{
+        "field": {
+            "name": "course_start_date",
+            "type": "text",
+            "label": "Fecha inicio curso",
+            "required": true
+        }
+    },
+    "course_end_date":{
+        "field": {
+            "name": "course_end_date",
+            "type": "text",
+            "label": "Fecha finalizacion curso",
+            "required": true
+        }
+    },
+    "has_other_courses":{
+        "field": {
+            "name": "has_other_courses",
+            "type": "text",
+            "label": "Has realizado otros cursos",
+            "required": true
+        }
+    }
+}

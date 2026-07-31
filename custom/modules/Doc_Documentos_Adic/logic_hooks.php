@@ -1,0 +1,25 @@
+<?php
+// Do not store anything in this file that is not part of the array or the hook version.  This file will
+// be automatically rebuilt in the future.
+$hook_version = 1;
+
+//
+// This is where all the logic hooks tie into
+$hook_array = Array();
+
+//
+// This is the 'before_save' event that we want to tie into
+$hook_array['after_save'] = Array();
+
+
+//
+// This is my custom logic hook to add a URL to the Case Description
+// It is set to fire in the second position, after the built-in activity happens
+$hook_array['after_save'][] = Array(6, 'Modify user', 'custom/modules/Doc_Documentos_Adic/addEstado.php','addEstadoClass', 'addEstado');
+$hook_array['after_save'][] = Array(5, 'Upload Status', 'custom/modules/Doc_Documentos_Adic/addEstado.php','addEstadoClass', 'uploadFile');
+
+$hook_array['process_record'] = Array();
+$hook_array['process_record'][] = Array(5, 'Mostrar input', 'custom/modules/Doc_Documentos_Adic/addEstado.php','addEstadoClass', 'commentInput');
+$hook_array['process_record'][] = Array(6, 'Change URL', 'custom/modules/Doc_Documentos_Adic/addEstado.php','addEstadoClass', 'changeUrl');
+
+?>

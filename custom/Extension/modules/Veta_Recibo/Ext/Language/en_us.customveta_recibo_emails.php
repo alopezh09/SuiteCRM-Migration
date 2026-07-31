@@ -1,0 +1,4 @@
+<?php
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_VETA_RECIBO_EMAILS_FROM_VETA_RECIBO_TITLE'] = 'Invoices Sent';
+$mod_strings['LBL_VETA_RECIBO_EMAILS_FROM_EMAILS_TITLE'] = 'Invoices Sent';

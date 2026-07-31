@@ -1,0 +1,114 @@
+<?php
+$module_name = 'Veta_ServicioCliente';
+$viewdefs [$module_name] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'prospecto',
+            'studio' => 'visible',
+            'label' => 'LBL_PROSPECTO',
+          ),
+          1 => 
+          array (
+            'name' => 'estudiante',
+            'studio' => 'visible',
+            'label' => 'LBL_ESTUDIANTE',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'estado',
+            'studio' => 'visible',
+            'label' => 'LBL_ESTADO',
+          ),
+          1 => 'assigned_user_name',
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fecha_proximo_contacto',
+            'label' => 'LBL_FECHA_PROXIMO_CONTACTO',
+          ),
+          1 => 
+          array (
+            'name' => 'fecha_ultimo_contacto',
+            'label' => 'LBL_FECHA_ULTIMO_CONTACTO',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'next_contact_date_company_c',
+            'label' => 'LBL_NEXT_CONTACT_DATE_COMPANY',
+          ),
+          1 => 
+          array (
+            'name' => 'apply_tranning_plan_c',
+            'studio' => 'visible',
+            'label' => 'LBL_APPLY_TRANNING_PLAN',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'virtual_all_notes',
+            'studio' => 'visible',
+            'label' => 'LBL_VIRTUAL_NOTE',
+            'type' => 'readonly',
+            'customCode' => '<div style="white-space:pre-line">{$fields.virtual_all_notes.value}</div>',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'virtual_note',
+            'studio' => 'visible',
+            'label' => 'LBL_NEW_NOTES',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+;
+?>

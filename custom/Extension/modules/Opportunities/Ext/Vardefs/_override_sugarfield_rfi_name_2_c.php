@@ -1,0 +1,6 @@
+<?php
+ // created: 2022-07-26 23:19:31
+$dictionary['Opportunity']['fields']['rfi_name_2_c']['inline_edit']='1';
+$dictionary['Opportunity']['fields']['rfi_name_2_c']['labelValue']='RFI Name 2';
+
+ ?>

@@ -1,0 +1,25 @@
+<?php
+// created: 2025-11-24 17:28:05
+$mod_strings = array (
+  'LBL_INTERNAL_DOCUMENT' => 'Internal Document',
+  'LBL_REQUESTED_TO' => 'Requested To',
+  'LBL_AYUDA' => 'Help',
+  'LBL_OBSERVACIONES' => 'Observations',
+  'LBL_RECURSOS' => 'Video Resources',
+  'LBL_SOLICITADOPOR' => 'Requested by',
+  'LBL_DOC_PLANTILLAS_DOC_DOCUMENTOS_FROM_DOC_PLANTILLAS_TITLE' => 'Checklist',
+  'LNK_NEW_RECORD' => 'Create Docs',
+  'LNK_LIST' => 'View Docs',
+  'LNK_IMPORT_DOC_DOCUMENTOS' => 'Import Docs',
+  'LBL_LIST_FORM_TITLE' => 'Documentos List',
+  'LBL_SEARCH_FORM_TITLE' => 'Search Docs',
+  'LBL_HOMEPAGE_TITLE' => 'My Documentos',
+  'LBL_QUANTITY_DOCUMENTS' => 'Quantity of Documents',
+  'LBL_RESOURCES2' => 'Resources 2',
+  'LBL_RESOURCES3' => 'Resources3',
+  'LBL_RESOURCES_TEXT_LABEL' => 'Video Resources Text Label',
+  'LBL_RESOURCES_TEXT_LABEL2' => 'Resources Text Label 2',
+  'LBL_RESOURCES_TEXT_LABEL3' => 'Resources Text Label 3',
+  'LBL_TYPE_OF_ITEM' => 'Type Of Item',
+  'LBL_CLIENT_DISPLAY_NAME' => 'Client Display Name',
+);

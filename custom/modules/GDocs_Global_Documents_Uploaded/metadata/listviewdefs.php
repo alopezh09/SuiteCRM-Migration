@@ -1,0 +1,69 @@
+<?php
+$module_name = 'GDocs_Global_Documents_Uploaded';
+$listViewDefs [$module_name] = 
+array (
+  'NAME' => 
+  array (
+    'width' => '32%',
+    'label' => 'LBL_NAME',
+    'default' => true,
+    'link' => true,
+  ),
+  'DOCUMENT_FOR' => 
+  array (
+    'type' => 'enum',
+    'studio' => 'visible',
+    'label' => 'LBL_DOCUMENT_FOR',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'GDOCS_GLOBAL_DOCUMENTS_UPLOADED_LEADS_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_GDOCS_GLOBAL_DOCUMENTS_UPLOADED_LEADS_FROM_LEADS_TITLE',
+    'id' => 'GDOCS_GLOBAL_DOCUMENTS_UPLOADED_LEADSLEADS_IDA',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'GDOCS_GLOBAL_DOCUMENTS_UPLOADED_NVC_COMPANIES_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_GDOCS_GLOBAL_DOCUMENTS_UPLOADED_NVC_COMPANIES_FROM_NVC_COMPANIES_TITLE',
+    'id' => 'GDOCS_GLOBAL_DOCUMENTS_UPLOADED_NVC_COMPANIESNVC_COMPANIES_IDA',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'MS_ID_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_MS_ID',
+    'width' => '10%',
+  ),
+  'FILE_URL' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_FILE_URL',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '9%',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'module' => 'Employees',
+    'id' => 'ASSIGNED_USER_ID',
+    'default' => true,
+  ),
+  'DATE_ENTERED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_ENTERED',
+    'width' => '10%',
+    'default' => true,
+  ),
+);
+;
+?>

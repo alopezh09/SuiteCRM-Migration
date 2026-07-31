@@ -1,0 +1,60 @@
+<?php
+// created: 2023-01-13 23:08:21
+$subpanel_layout['list_fields'] = array (
+  'name' => 
+  array (
+    'vname' => 'LBL_NAME',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'width' => '45%',
+    'default' => true,
+  ),
+  'description' => 
+  array (
+    'type' => 'text',
+    'vname' => 'LBL_DESCRIPTION',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => true,
+  ),
+  'sent_to_c' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'vname' => 'LBL_SENT_TO',
+    'width' => '10%',
+  ),
+  'modified_by_name' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'vname' => 'LBL_MODIFIED_NAME',
+    'id' => 'MODIFIED_USER_ID',
+    'width' => '10%',
+    'default' => true,
+    'widget_class' => 'SubPanelDetailViewLink',
+    'target_module' => 'Users',
+    'target_record_key' => 'modified_user_id',
+  ),
+  'received_by_type_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'vname' => 'LBL_RECEIVED_BY_TYPE',
+    'width' => '10%',
+  ),
+  'date_entered' => 
+  array (
+    'type' => 'datetime',
+    'vname' => 'LBL_DATE_ENTERED',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'remove_button' => 
+  array (
+    'width' => '5%',
+    'vname' => 'LBL_REMOVE',
+    'default' => true,
+    'widget_class' => 'SubPanelRemoveButton',
+  ),
+);
