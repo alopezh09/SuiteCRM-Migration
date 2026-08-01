@@ -50,5 +50,9 @@ CLAUDE.md
 *.md
 *.txt
 *.sh
+<<<<<<< HEAD
 
 *.pdf
+=======
+*.pdf
+>>>>>>> Agregar archivos restantes del servidor
