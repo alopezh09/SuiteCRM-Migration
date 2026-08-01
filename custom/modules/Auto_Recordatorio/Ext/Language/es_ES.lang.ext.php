@@ -1,0 +1,9 @@
+<?php 
+ //WARNING: The contents of this file are auto-generated
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_AUTO_RECORDATORIO_EMAILS_FROM_EMAILS_TITLE'] = 'Emails';
+$mod_strings['LBL_AUTO_RECORDATORIO_CALLS_FROM_CALLS_TITLE'] = 'Llamadas';
+
+?>

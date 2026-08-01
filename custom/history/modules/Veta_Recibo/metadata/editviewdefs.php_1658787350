@@ -1,0 +1,431 @@
+<?php
+$module_name = 'Veta_Recibo';
+$viewdefs [$module_name] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'form' => 
+      array (
+        'hidden' => 
+        array (
+          0 => '<input type="hidden" id="asegurador" name="asegurador" value="{$fields.asegurador.value}">',
+        ),
+      ),
+      'includes' => 
+      array (
+        0 => 
+        array (
+          'file' => 'modules/Veta_Recibo/javascript/seguro_soel.js',
+        ),
+      ),
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => true,
+      'tabDefs' => 
+      array (
+        'DEFAULT' => 
+        array (
+          'newTab' => true,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL2' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL3' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL6' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL7' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL4' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL5' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL8' => 
+        array (
+          'newTab' => true,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'estado',
+            'studio' => 'visible',
+            'label' => 'LBL_ESTADO',
+          ),
+          1 => '',
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'applicant_email_template_c',
+            'studio' => 'visible',
+            'label' => 'LBL_APPLICANT_EMAIL_TEMPLATE',
+          ),
+          1 => 
+          array (
+            'name' => 'company_email_template_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMPANY_EMAIL_TEMPLATE',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'descuento',
+            'label' => 'LBL_DESCUENTO',
+          ),
+          1 => 
+          array (
+            'name' => 'company_discount_c',
+            'label' => 'LBL_COMPANY_DISCOUNT',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'comments_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMMENTS',
+          ),
+          1 => 
+          array (
+            'name' => 'company_comments_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMPANY_COMMENTS',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'virtual_all_notes',
+            'studio' => 'visible',
+            'label' => 'LBL_VIRTUAL_NOTE',
+            'type' => 'readonly',
+            'customCode' => '<div style="white-space:pre-line">{$fields.virtual_all_notes.value}</div>',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'virtual_note',
+            'studio' => 'visible',
+            'label' => 'LBL_NEW_NOTES',
+          ),
+        ),
+      ),
+      'lbl_editview_panel2' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'department_visa_fee_1_c',
+            'studio' => 'visible',
+            'label' => 'LBL_DEPARTMENT_VISA_FEE_1',
+          ),
+          1 => 
+          array (
+            'name' => 'department_visa_fee_2_c',
+            'studio' => 'visible',
+            'label' => 'LBL_DEPARTMENT_VISA_FEE_2',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'department_visa_fee_3_c',
+            'studio' => 'visible',
+            'label' => 'LBL_DEPARTMENT_VISA_FEE_3',
+          ),
+          1 => 
+          array (
+            'name' => 'department_visa_fee_4_c',
+            'studio' => 'visible',
+            'label' => 'LBL_DEPARTMENT_VISA_FEE_4',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'department_visa_fee_5_c',
+            'studio' => 'visible',
+            'label' => 'LBL_DEPARTMENT_VISA_FEE_5',
+          ),
+          1 => 
+          array (
+            'name' => 'department_visa_fee_6_c',
+            'studio' => 'visible',
+            'label' => 'LBL_DEPARTMENT_VISA_FEE_6',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'department_visa_fee_7_c',
+            'studio' => 'visible',
+            'label' => 'LBL_DEPARTMENT_VISA_FEE_7',
+          ),
+          1 => '',
+        ),
+      ),
+      'lbl_editview_panel3' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'department_visa_fee_company1_c',
+            'studio' => 'visible',
+            'label' => 'LBL_DEPARTMENT_VISA_FEE_COMPANY1',
+          ),
+          1 => 
+          array (
+            'name' => 'department_visa_fee_company2_c',
+            'studio' => 'visible',
+            'label' => 'LBL_DEPARTMENT_VISA_FEE_COMPANY2',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'department_visa_fee_company3_c',
+            'studio' => 'visible',
+            'label' => 'LBL_DEPARTMENT_VISA_FEE_COMPANY3',
+          ),
+          1 => 
+          array (
+            'name' => 'department_visa_fee_company4_c',
+            'studio' => 'visible',
+            'label' => 'LBL_DEPARTMENT_VISA_FEE_COMPANY4',
+          ),
+        ),
+      ),
+      'lbl_editview_panel6' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'applicant_skill_assessment_fee1_c',
+            'studio' => 'visible',
+            'label' => 'LBL_APPLICANT_SKILL_ASSESSMENT_FEE1_C',
+          ),
+          1 => 
+          array (
+            'name' => 'applicant_skill_assessment_fee2_c',
+            'studio' => 'visible',
+            'label' => 'LBL_APPLICANT_SKILL_ASSESSMENT_FEE2',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'applicant_skill_assessment_fee3_c',
+            'studio' => 'visible',
+            'label' => 'LBL_APPLICANT_SKILL_ASSESSMENT_FEE3',
+          ),
+          1 => 
+          array (
+            'name' => 'applicant_skill_assessment_fee4_c',
+            'studio' => 'visible',
+            'label' => 'LBL_APPLICANT_SKILL_ASSESSMENT_FEE4',
+          ),
+        ),
+      ),
+      'lbl_editview_panel7' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'company_skill_assessment_fee1_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMPANY_SKILL_ASSESSMENT_FEE1',
+          ),
+          1 => 
+          array (
+            'name' => 'company_skill_assessment_fee2_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMPANY_SKILL_ASSESSMENT_FEE2',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'company_skill_assessment_fee3_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMPANY_SKILL_ASSESSMENT_FEE3',
+          ),
+          1 => 
+          array (
+            'name' => 'company_skill_assessment_fee4_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMPANY_SKILL_ASSESSMENT_FEE4',
+          ),
+        ),
+      ),
+      'lbl_editview_panel4' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'additional_cost_applicant_label_c',
+            'label' => 'LBL_ADDITIONAL_COST_APPLICANT_LABEL',
+          ),
+          1 => 
+          array (
+            'name' => 'additional_cost_applicant_amount_c',
+            'label' => 'LBL_ADDITIONAL_COST_APPLICANT_AMOUNT',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'additional_cost_company_label_c',
+            'label' => 'LBL_ADDITIONAL_COST_COMPANY_LABEL',
+          ),
+          1 => 
+          array (
+            'name' => 'additional_cost_company_amount_c',
+            'label' => 'LBL_ADDITIONAL_COST_COMPANY_AMOUNT',
+          ),
+        ),
+      ),
+      'lbl_editview_panel5' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'additional_applicant_department_fees_label_c',
+            'label' => 'LBL_ADDITIONAL_APPLICANT_DEPARTMENT_FEES_LABEL',
+          ),
+          1 => 
+          array (
+            'name' => 'additional_applicant_department_fees_amount__c',
+            'label' => 'LBL_ADDITIONAL_APPLICANT_DEPARTMENT_FEES_AMOUNT_',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'additional_company_department_fees_label_c',
+            'label' => 'LBL_ADDITIONAL_COMPANY_DEPARTMENT_FEES_LABEL',
+          ),
+          1 => 
+          array (
+            'name' => 'additional_company_department_fees_amount_c',
+            'label' => 'LBL_ADDITIONAL_COMPANY_DEPARTMENT_FEES_AMOUNT',
+          ),
+        ),
+      ),
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'soel_asegurador',
+            'label' => 'LBL_SOEL_ASEGURADOR',
+            'type' => 'enum',
+            'function' => 
+            array (
+              'name' => 'getAseguradores',
+            ),
+          ),
+          1 => 
+          array (
+            'name' => 'seguro',
+            'label' => 'LBL_SEGURO',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'duracion',
+            'label' => 'LBL_DURACION',
+          ),
+          1 => 
+          array (
+            'name' => 'tipo_seguro',
+            'studio' => 'visible',
+            'label' => 'LBL_TIPO_SEGURO',
+          ),
+        ),
+      ),
+      'lbl_editview_panel8' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'invoice_due_date_c',
+            'label' => 'LBL_INVOICE_DUE_DATE',
+          ),
+          1 => '',
+        ),
+      ),
+    ),
+  ),
+);
+;
+?>

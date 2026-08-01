@@ -1,0 +1,61 @@
+<?php
+$module_name = 'Veta_Curso';
+$searchdefs [$module_name] = 
+array (
+  'layout' => 
+  array (
+    'basic_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
+      ),
+     
+    ),
+    'advanced_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
+      ),
+
+        //Nuevos      
+        'tipovisa' => 
+        array (
+          'type' => 'dynamicenum',
+          'id' => 'VETA_TIPOSVISA_ID_C',
+          'studio' => 'visible',
+          'label' => 'LBL_TIPOVISA',
+          'width' => '10%',
+          'default' => true,
+          'name' => 'tipovisa',
+        ),
+     
+        'activo' => 
+      array (
+        'type' => 'bool',
+        'default' => true,
+        'label' => 'LBL_ACTIVO',
+        'width' => '10%',
+        'name' => 'activo',
+      ),
+      
+    ),
+  ),
+  'templateMeta' => 
+  array (
+    'maxColumns' => '3',
+    'maxColumnsBasic' => '4',
+    'widths' => 
+    array (
+      'label' => '10',
+      'field' => '30',
+    ),
+  ),
+);
+;
+?>

@@ -1,0 +1,9 @@
+<?php 
+ //WARNING: The contents of this file are auto-generated
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_GDOCS_GLOBAL_DOCUMENTS_UPLOADED_LEADS_FROM_LEADS_TITLE'] = 'Leads';
+$mod_strings['LBL_GDOCS_GLOBAL_DOCUMENTS_UPLOADED_NVC_COMPANIES_FROM_NVC_COMPANIES_TITLE'] = 'Companies';
+
+?>

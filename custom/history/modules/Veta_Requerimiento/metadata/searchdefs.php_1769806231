@@ -1,0 +1,1180 @@
+<?php
+$module_name = 'Veta_Requerimiento';
+$searchdefs [$module_name] = 
+array (
+  'layout' => 
+  array (
+    'basic_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
+      ),
+      'estado' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_ESTADO',
+        'width' => '10%',
+        'name' => 'estado',
+      ),
+      'fuente' => 
+      array (
+        'type' => 'enum',
+        'studio' => 'visible',
+        'label' => 'LBL_FUENTE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'fuente',
+      ),
+      'campana' => 
+      array (
+        'type' => 'relate',
+        'studio' => 'visible',
+        'label' => 'LBL_CAMPANA',
+        'id' => 'CAMPAIGN_ID_C',
+        'link' => true,
+        'width' => '10%',
+        'default' => true,
+        'name' => 'campana',
+      ),
+      'veta_requerimiento_contacts_name' => 
+      array (
+        'type' => 'relate',
+        'link' => true,
+        'label' => 'LBL_VETA_REQUERIMIENTO_CONTACTS_FROM_CONTACTS_TITLE',
+        'id' => 'VETA_REQUERIMIENTO_CONTACTSCONTACTS_IDA',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'veta_requerimiento_contacts_name',
+      ),
+      'veta_requerimiento_leads_name' => 
+      array (
+        'type' => 'relate',
+        'link' => true,
+        'label' => 'LBL_VETA_REQUERIMIENTO_LEADS_FROM_LEADS_TITLE',
+        'id' => 'VETA_REQUERIMIENTO_LEADSLEADS_IDA',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'veta_requerimiento_leads_name',
+      ),
+      'assigned_user_id' => 
+      array (
+        'name' => 'assigned_user_id',
+        'label' => 'LBL_ASSIGNED_TO',
+        'type' => 'enum',
+        'function' => 
+        array (
+          'name' => 'get_user_array',
+          'params' => 
+          array (
+            0 => false,
+          ),
+        ),
+        'width' => '10%',
+        'default' => true,
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
+      ),
+      'created_by' => 
+      array (
+        'type' => 'assigned_user_name',
+        'label' => 'LBL_CREATED',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'created_by',
+      ),
+      'fuente' => 
+      array (
+        'type' => 'enum',
+        'studio' => 'visible',
+        'label' => 'LBL_FUENTE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'fuente',
+      ),
+      'campana' => 
+      array (
+        'type' => 'relate',
+        'studio' => 'visible',
+        'label' => 'LBL_CAMPANA',
+        'link' => true,
+        'width' => '10%',
+        'default' => true,
+        'id' => 'CAMPAIGN_ID_C',
+        'name' => 'campana',
+      ),
+      'visto_bueno_comercial' => 
+      array (
+        'type' => 'bool',
+        'default' => true,
+        'label' => 'LBL_VISTO_BUENO_COMERCIAL',
+        'width' => '10%',
+        'name' => 'visto_bueno_comercial',
+      ),
+      'visto_bueno_visas' => 
+      array (
+        'type' => 'bool',
+        'default' => true,
+        'label' => 'LBL_VISTO_BUENO_VISAS',
+        'width' => '10%',
+        'name' => 'visto_bueno_visas',
+      ),
+      'estado' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_ESTADO',
+        'width' => '10%',
+        'name' => 'estado',
+      ),
+      'company_stage_c' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_COMPANY_STAGE',
+        'width' => '10%',
+        'name' => 'company_stage_c',
+      ),
+      'estado_semaforizacion_c' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_ESTADO_SEMAFORIZACION',
+        'width' => '10%',
+        'name' => 'estado_semaforizacion_c',
+      ),
+      'referido' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_REFERIDO',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'referido',
+      ),
+      'veta_requerimiento_leads_name' => 
+      array (
+        'type' => 'relate',
+        'link' => true,
+        'label' => 'LBL_VETA_REQUERIMIENTO_LEADS_FROM_LEADS_TITLE',
+        'width' => '10%',
+        'default' => true,
+        'id' => 'VETA_REQUERIMIENTO_LEADSLEADS_IDA',
+        'name' => 'veta_requerimiento_leads_name',
+      ),
+      'veta_requerimiento_contacts_name' => 
+      array (
+        'type' => 'relate',
+        'link' => true,
+        'label' => 'LBL_VETA_REQUERIMIENTO_CONTACTS_FROM_CONTACTS_TITLE',
+        'width' => '10%',
+        'default' => true,
+        'id' => 'VETA_REQUERIMIENTO_CONTACTSCONTACTS_IDA',
+        'name' => 'veta_requerimiento_contacts_name',
+      ),
+      'assigned_user_id' => 
+      array (
+        'name' => 'assigned_user_id',
+        'label' => 'LBL_ASSIGNED_TO',
+        'type' => 'enum',
+        'function' => 
+        array (
+          'name' => 'get_user_array',
+          'params' => 
+          array (
+            0 => false,
+          ),
+        ),
+        'default' => true,
+        'width' => '10%',
+      ),
+      'soel_home_phone_lead' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_SOEL_HOME_PHONE_LEAD',
+        'width' => '10%',
+        'name' => 'soel_home_phone_lead',
+        'sortable' => false,
+      ),
+      'soel_mobile_phone_lead' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_SOEL_MOBILE_PHONE_LEAD',
+        'width' => '10%',
+        'name' => 'soel_mobile_phone_lead',
+        'sortable' => false,
+      ),
+      'soel_estado_lead' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'label' => 'LBL_SOEL_ESTADO_LEAD',
+        'width' => '10%',
+        'name' => 'soel_estado_lead',
+        'sortable' => false,
+      ),
+      'soel_fuente_lead' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'label' => 'LBL_SOEL_FUENTE_LEAD',
+        'width' => '10%',
+        'name' => 'soel_fuente_lead',
+        'sortable' => false,
+      ),
+      'labour_application_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_LABOUR_APPLICATION_DATE',
+        'width' => '10%',
+        'name' => 'labour_application_date_c',
+      ),
+      'labour_expectation_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_LABOUR_EXPECTATION_DATE',
+        'width' => '10%',
+        'name' => 'labour_expectation_date_c',
+      ),
+      'nomination_app_date' => 
+      array (
+        'type' => 'datetime',
+        'default' => true,
+        'label' => 'LBL_NOMINATION_APP_DATE',
+        'width' => '10%',
+        'sortable' => false,
+        'name' => 'nomination_app_date',
+      ),
+      'nomination_app_exp_date' => 
+      array (
+        'type' => 'datetime',
+        'default' => true,
+        'label' => 'LBL_NOMINATION_APP_EXP_DATE',
+        'width' => '10%',
+        'sortable' => false,
+        'name' => 'nomination_app_exp_date',
+      ),
+      'nomination_approval_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_NOMINATION_APPROVAL_DATE',
+        'width' => '10%',
+        'name' => 'nomination_approval_date_c',
+      ),
+      'skill_assessment_app_date' => 
+      array (
+        'type' => 'datetime',
+        'default' => true,
+        'label' => 'LBL_SKILL_ASSESSMENT_APP_DATE',
+        'width' => '10%',
+        'sortable' => false,
+        'name' => 'skill_assessment_app_date',
+      ),
+      'skill_assessment_app_exp_date' => 
+      array (
+        'type' => 'datetime',
+        'default' => true,
+        'label' => 'LBL_SKILL_ASSESSMENT_APP_EXP_DATE',
+        'width' => '10%',
+        'sortable' => false,
+        'name' => 'skill_assessment_app_exp_date',
+      ),
+      'tbs_application_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_TBS_APPLICATION_DATE',
+        'width' => '10%',
+        'name' => 'tbs_application_date_c',
+      ),
+      'tbs_expectation_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_TBS_EXPECTATION_DATE',
+        'width' => '10%',
+        'name' => 'tbs_expectation_date_c',
+      ),
+      'tbs_approval_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_TBS_APPROVAL_DATE',
+        'width' => '10%',
+        'name' => 'tbs_approval_date_c',
+      ),
+      'eoi_application_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_EOI_APPLICATION_DATE',
+        'width' => '10%',
+        'name' => 'eoi_application_date_c',
+      ),
+      'eoi_expectation_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_EOI_EXPECTATION_DATE',
+        'width' => '10%',
+        'name' => 'eoi_expectation_date_c',
+      ),
+      'eoi_appoval_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_EOI_APPOVAL_DATE',
+        'width' => '10%',
+        'name' => 'eoi_appoval_date_c',
+      ),
+      'rcb_application_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_RCB_APPLICATION_DATE',
+        'width' => '10%',
+        'name' => 'rcb_application_date_c',
+      ),
+      'rcb_expectation_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_RCB_EXPECTATION_DATE',
+        'width' => '10%',
+        'name' => 'rcb_expectation_date_c',
+      ),
+      'rcb_approval_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_RCB_APPROVAL_DATE',
+        'width' => '10%',
+        'name' => 'rcb_approval_date_c',
+      ),
+      'roi_application_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_ROI_APPLICATION_DATE',
+        'width' => '10%',
+        'name' => 'roi_application_date_c',
+      ),
+      'roi_expectation_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_ROI_EXPECTATION_DATE',
+        'width' => '10%',
+        'name' => 'roi_expectation_date_c',
+      ),
+      'roi_approval_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_ROI_APPROVAL_DATE',
+        'width' => '10%',
+        'name' => 'roi_approval_date_c',
+      ),
+      'nvc_companies_veta_requerimiento_1_name' => 
+      array (
+        'type' => 'relate',
+        'link' => true,
+        'label' => 'LBL_NVC_COMPANIES_VETA_REQUERIMIENTO_1_FROM_NVC_COMPANIES_TITLE',
+        'id' => 'NVC_COMPANIES_VETA_REQUERIMIENTO_1NVC_COMPANIES_IDA',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'nvc_companies_veta_requerimiento_1_name',
+      ),
+      'soel_pais_lead' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'label' => 'LBL_SOEL_PAIS_LEAD',
+        'width' => '10%',
+        'name' => 'soel_pais_lead',
+        'sortable' => false,
+      ),
+      'soel_departamento_lead' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'label' => 'LBL_SOEL_DEPARTAMENTO_LEAD',
+        'width' => '10%',
+        'name' => 'soel_departamento_lead',
+        'sortable' => false,
+      ),
+      'soel_ciudad_lead' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'label' => 'LBL_SOEL_CIUDAD_LEAD',
+        'width' => '10%',
+        'name' => 'soel_ciudad_lead',
+        'sortable' => false,
+      ),
+      'soel_visa_lead' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_SOEL_VISA_LEAD',
+        'width' => '10%',
+        'name' => 'soel_visa_lead',
+        'sortable' => false,
+      ),
+      'soel_pasaporte_lead' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_SOEL_PASAPORTE_LEAD',
+        'width' => '10%',
+        'name' => 'soel_pasaporte_lead',
+        'sortable' => false,
+      ),
+      'soel_asignado_lead' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'label' => 'LBL_SOEL_ASIGNADO_LEAD',
+        'width' => '10%',
+        'name' => 'soel_asignado_lead',
+        'sortable' => false,
+        'function' => 
+        array (
+          'name' => 'getAsignadoLeads',
+        ),
+      ),
+      'soel_campana_lead' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'label' => 'LBL_SOEL_CAMPANA_LEAD',
+        'width' => '10%',
+        'name' => 'soel_campana_lead',
+        'sortable' => false,
+        'function' => 
+        array (
+          'name' => 'getCampanaLeads',
+        ),
+      ),
+      'soel_convertido_lead' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'label' => 'LBL_SOEL_CONVERTIDO_LEAD',
+        'width' => '10%',
+        'name' => 'soel_convertido_lead',
+        'sortable' => false,
+        'function' => 
+        array (
+          'name' => 'getYesNoOptions',
+        ),
+      ),
+      'soel_home_phone_contact' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_SOEL_HOME_PHONE_CONTACT',
+        'width' => '10%',
+        'name' => 'soel_home_phone_contact',
+        'sortable' => false,
+      ),
+      'soel_mobile_phone_contact' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_SOEL_MOBILE_PHONE_CONTACT',
+        'width' => '10%',
+        'name' => 'soel_mobile_phone_contact',
+        'sortable' => false,
+      ),
+      'soel_fuente_contact' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'label' => 'LBL_SOEL_FUENTE_CONTACT',
+        'width' => '10%',
+        'name' => 'soel_fuente_contact',
+        'sortable' => false,
+      ),
+      'soel_pais_contact' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'label' => 'LBL_SOEL_PAIS_CONTACT',
+        'width' => '10%',
+        'name' => 'soel_pais_contact',
+        'sortable' => false,
+      ),
+      'soel_departamento_contact' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'label' => 'LBL_SOEL_DEPARTAMENTO_CONTACT',
+        'width' => '10%',
+        'name' => 'soel_departamento_contact',
+        'sortable' => false,
+      ),
+      'soel_ciudad_contact' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'label' => 'LBL_SOEL_CIUDAD_CONTACT',
+        'width' => '10%',
+        'name' => 'soel_ciudad_contact',
+        'sortable' => false,
+      ),
+      'soel_asignado_contact' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'label' => 'LBL_SOEL_ASIGNADO_CONTACT',
+        'width' => '10%',
+        'name' => 'soel_asignado_contact',
+        'sortable' => false,
+        'function' => 
+        array (
+          'name' => 'getAsignadoLeads',
+        ),
+      ),
+      'soel_visa_contact' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_SOEL_VISA_CONTACT',
+        'width' => '10%',
+        'name' => 'soel_visa_contact',
+        'sortable' => false,
+      ),
+      'soel_campana_contact' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'label' => 'LBL_SOEL_CAMPANA_CONTACT',
+        'width' => '10%',
+        'name' => 'soel_campana_contact',
+        'sortable' => false,
+        'function' => 
+        array (
+          'name' => 'getCampanaLeads',
+        ),
+      ),
+      'soel_oficina_comercial' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'label' => 'LBL_SOEL_OFICINA_COMERCIAL',
+        'width' => '10%',
+        'name' => 'soel_oficina_comercial',
+        'sortable' => false,
+        'function' => 
+        array (
+          'name' => 'getOficinasComercial',
+        ),
+      ),
+      'industry_aplicant' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_INDUSTRY_APLICANT',
+        'width' => '10%',
+        'name' => 'industry_aplicant',
+        'sortable' => false,
+      ),
+      'aplicant_first_payment_amount' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_APPLICANT_FIRST_PAYMENT_AMOUNT',
+        'width' => '10%',
+        'name' => 'aplicant_first_payment_amount',
+        'sortable' => false,
+      ),
+      'profession' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_PROFESSION',
+        'width' => '10%',
+        'name' => 'profession',
+        'sortable' => false,
+      ),
+      'current_visa_subclass' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_CURRENT_VISA_SUBCLASS',
+        'width' => '10%',
+        'name' => 'current_visa_subclass',
+        'sortable' => false,
+      ),
+      'current_job_position' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_CURRENT_JOB_POSITION',
+        'width' => '10%',
+        'name' => 'current_job_position',
+        'sortable' => false,
+      ),
+      'month_of_experience' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_MONTHS_OF_EXPERIENCEL',
+        'width' => '10%',
+        'name' => 'month_of_experience',
+        'sortable' => false,
+      ),
+      'level_of_english' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_LEVEL_OF_ENGLISH',
+        'width' => '10%',
+        'name' => 'level_of_english',
+        'sortable' => false,
+      ),
+      'nationality' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_NATIONALITY',
+        'width' => '10%',
+        'name' => 'nationality',
+        'sortable' => false,
+      ),
+      'potential_visa_subclass' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_POTENTIAL_VISA_SUBCLASS',
+        'width' => '10%',
+        'name' => 'potential_visa_subclass',
+        'sortable' => false,
+      ),
+      'cost_agrement_number' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_COST_AGREMENT_NUMBER',
+        'width' => '10%',
+        'name' => 'cost_agrement_number',
+        'sortable' => false,
+      ),
+      'cost_agrement_visa_subclass' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_COST_AGREMENT_VISA_SUBCLASS',
+        'width' => '10%',
+        'name' => 'cost_agrement_visa_subclass',
+        'sortable' => false,
+      ),
+      'migration_agent_name' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_MIGRATION_AGENT_NAME',
+        'width' => '10%',
+        'name' => 'migration_agent_name',
+        'sortable' => false,
+      ),
+      'leap_id' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_LEAP_ID',
+        'width' => '10%',
+        'name' => 'leap_id',
+        'sortable' => false,
+      ),
+      'recluter_name' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_RECLUTER_NAME',
+        'width' => '10%',
+        'name' => 'recluter_name',
+        'sortable' => false,
+      ),
+      'company_name' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_COMPANY_NAME',
+        'width' => '10%',
+        'name' => 'company_name',
+        'sortable' => false,
+      ),
+      'company_city' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_COMPANY_CITY',
+        'width' => '10%',
+        'name' => 'company_city',
+        'sortable' => false,
+      ),
+      'company_industry' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_COMPANY_INDUSTRY',
+        'width' => '10%',
+        'name' => 'company_industry',
+        'sortable' => false,
+      ),
+      'applicant_email_c' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_APPLICANT_EMAIL',
+        'width' => '10%',
+        'name' => 'applicant_email_c',
+      ),
+      'email_company' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_EMAIL_COMPANY',
+        'width' => '10%',
+        'name' => 'email_company',
+        'sortable' => false,
+      ),
+      'phone_company' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_PHONE_COMPANY',
+        'width' => '10%',
+        'name' => 'phone_company',
+        'sortable' => false,
+      ),
+      'company_first_payment_amount' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_COMPANY_FIRST_PAYMENT_AMOUNT',
+        'width' => '10%',
+        'name' => 'company_first_payment_amount',
+        'sortable' => false,
+      ),
+      'secondary_aplicant_name' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_SECONDARY_APLICANT_NAME',
+        'width' => '10%',
+        'name' => 'secondary_aplicant_name',
+        'sortable' => false,
+      ),
+      'secondary_pasport_number' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_SECONDARY_PASPORT_NUMBER',
+        'width' => '10%',
+        'name' => 'secondary_pasport_number',
+        'sortable' => false,
+      ),
+      'dependent_name' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_DEPENDENT_NAME',
+        'width' => '10%',
+        'name' => 'dependent_name',
+        'sortable' => false,
+      ),
+      'aplicant_mmm_fee' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_APLICANT_MMM_FEE',
+        'width' => '10%',
+        'name' => 'aplicant_mmm_fee',
+        'sortable' => false,
+      ),
+      'second_dependent_name' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_SECOND_DEPENDENT_NAME',
+        'width' => '10%',
+        'name' => 'second_dependent_name',
+        'sortable' => false,
+      ),
+      'third_dependent_name' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_THIRD_DEPENDENT_NAME',
+        'width' => '10%',
+        'name' => 'third_dependent_name',
+        'sortable' => false,
+      ),
+      'consultation_fee' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_CONSULTATION_FEE',
+        'width' => '10%',
+        'name' => 'consultation_fee',
+        'sortable' => false,
+      ),
+      'aplicant_departments_visa_fee' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_APLICANT_DEPARTMENTS_VISA_FEE',
+        'width' => '10%',
+        'name' => 'aplicant_departments_visa_fee',
+        'sortable' => false,
+      ),
+      'company_mmm_fee' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_COMPANY_MMM_FEE',
+        'width' => '10%',
+        'name' => 'company_mmm_fee',
+        'sortable' => false,
+      ),
+      'aplicant_company_mmm' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_APLICANT_COMPANY_MMM',
+        'width' => '10%',
+        'name' => 'aplicant_company_mmm',
+        'sortable' => false,
+      ),
+      'total' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_TOTAL',
+        'width' => '10%',
+        'name' => 'Total',
+        'sortable' => false,
+      ),
+      'aplicant_company_mmm_fees' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_APLICANT_COMPANY_MMM_FEES',
+        'width' => '10%',
+        'name' => 'aplicant_company_mmm_fees',
+        'sortable' => false,
+      ),
+      'total_paid' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_TOTAL_PAID',
+        'width' => '10%',
+        'name' => 'total_paid',
+        'sortable' => false,
+      ),
+      'ocupation' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_OCUPATION',
+        'width' => '10%',
+        'name' => 'ocupation',
+        'sortable' => false,
+      ),
+      'main_aplicant_name' => 
+      array (
+        'type' => 'varchar',
+        'default' => true,
+        'label' => 'LBL_MAIN_APLICANT_NAME',
+        'width' => '10%',
+        'name' => 'main_aplicant_name',
+        'sortable' => false,
+      ),
+      'date_entered' => 
+      array (
+        'type' => 'datetime',
+        'label' => 'LBL_DATE_ENTERED',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'date_entered',
+      ),
+      'soel_fecha_modificacion_lead' => 
+      array (
+        'type' => 'datetime',
+        'default' => true,
+        'label' => 'LBL_SOEL_FECHA_MODIFICACION_LEAD',
+        'width' => '10%',
+        'name' => 'soel_fecha_modificacion_lead',
+        'sortable' => false,
+      ),
+      'soel_fecha_modificacion_contact' => 
+      array (
+        'type' => 'datetime',
+        'default' => true,
+        'label' => 'LBL_SOEL_FECHA_MODIFICACION_CONTACT',
+        'width' => '10%',
+        'name' => 'soel_fecha_modificacion_contact',
+        'sortable' => false,
+      ),
+      'fecha_viaje' => 
+      array (
+        'type' => 'date',
+        'label' => 'LBL_FECHA_VIAJE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'fecha_viaje',
+      ),
+      'fecha_proximo_contacto' => 
+      array (
+        'type' => 'date',
+        'label' => 'LBL_FECHA_PROXIMO_CONTACTO',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'fecha_proximo_contacto',
+      ),
+      'fecha_ultimo_contacto' => 
+      array (
+        'type' => 'date',
+        'label' => 'LBL_FECHA_ULTIMO_CONTACTO',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'fecha_ultimo_contacto',
+      ),
+      'fecha_primer_presupuesto' => 
+      array (
+        'type' => 'date',
+        'label' => 'LBL_FECHA_PRIMER_PRESUPUESTO',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'fecha_primer_presupuesto',
+      ),
+      'soel_fecha_expiracion_visa_lead' => 
+      array (
+        'type' => 'datetime',
+        'default' => true,
+        'label' => 'LBL_SOEL_FECHA_EXPIRACION_VISA_LEAD',
+        'width' => '10%',
+        'name' => 'soel_fecha_expiracion_visa_lead',
+        'sortable' => false,
+      ),
+      'soel_fecha_expiracion_visa_contact' => 
+      array (
+        'type' => 'datetime',
+        'default' => true,
+        'label' => 'LBL_SOEL_FECHA_EXPIRACION_VISA_CONTACT',
+        'width' => '10%',
+        'name' => 'soel_fecha_expiracion_visa_contact',
+        'sortable' => false,
+      ),
+      'visa_expire_secondary_applicant_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_VISA_EXPIRE_SECONDARY_APPLICANT_DATE',
+        'width' => '10%',
+        'name' => 'visa_expire_secondary_applicant_date_c',
+      ),
+      'visa_expire_1st_dependent_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_VISA_EXPIRE_1ST_DEPENDENT_DATE',
+        'width' => '10%',
+        'name' => 'visa_expire_1st_dependent_date_c',
+      ),
+      'visa_expire_2nd_dependent_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_VISA_EXPIRE_2ND_DEPENDENT_DATE',
+        'width' => '10%',
+        'name' => 'visa_expire_2nd_dependent_date_c',
+      ),
+      'visa_expire_3rd_dependent_date_c' => 
+      array (
+        'type' => 'date',
+        'default' => true,
+        'label' => 'LBL_VISA_EXPIRE_3RD_DEPENDENT_DATE',
+        'width' => '10%',
+        'name' => 'visa_expire_3rd_dependent_date_c',
+      ),
+      'consultation_date' => 
+      array (
+        'type' => 'datetime',
+        'default' => true,
+        'label' => 'LBL_CONSULTATION_DATE',
+        'width' => '10%',
+        'name' => 'consultation_date',
+        'sortable' => false,
+      ),
+      'aplicant_1st_payment_date' => 
+      array (
+        'type' => 'datetime',
+        'default' => true,
+        'label' => 'LBL_APPLICANT_1ST_PAYMENT_DATE',
+        'width' => '10%',
+        'name' => 'aplicant_1st_payment_date',
+        'sortable' => false,
+      ),
+      'quote_date' => 
+      array (
+        'type' => 'datetime',
+        'default' => true,
+        'label' => 'LBL_QUOTE_DATE',
+        'width' => '10%',
+        'name' => 'quote_date',
+        'sortable' => false,
+      ),
+      'company_1st_payment_date' => 
+      array (
+        'type' => 'datetime',
+        'default' => true,
+        'label' => 'LBL_COMPANY_1ST_PAYMENT_DATE',
+        'width' => '10%',
+        'name' => 'company_1st_payment_date',
+        'sortable' => false,
+      ),
+      'from_a_company_c' => 
+      array (
+        'type' => 'bool',
+        'default' => true,
+        'label' => 'LBL_FROM_A_COMPANY',
+        'width' => '10%',
+        'name' => 'from_a_company_c',
+      ),
+    ),
+    'company_sbs_expiry_date' => 
+    array (
+      'type' => 'datetime',
+      'default' => true,
+      'label' => 'LBL_COMPANY_SBS_EXPIRY_DATE',
+      'width' => '10%',
+      'name' => 'company_sbs_expiry_date',
+      'sortable' => false,
+    ),
+    'secondary_dob' => 
+    array (
+      'type' => 'datetime',
+      'default' => true,
+      'label' => 'LBL_SECONDARY_DOB',
+      'width' => '10%',
+      'name' => 'secondary_dob',
+      'sortable' => false,
+    ),
+    'dependent_dob' => 
+    array (
+      'type' => 'datetime',
+      'default' => true,
+      'label' => 'LBL_DEPENDENT_DOB',
+      'width' => '10%',
+      'name' => 'dependent_dob',
+      'sortable' => false,
+    ),
+    'second_dependent_dob' => 
+    array (
+      'type' => 'datetime',
+      'default' => true,
+      'label' => 'LBL_SECOND_DEPENDENT_DOB',
+      'width' => '10%',
+      'name' => 'second_dependent_dob',
+      'sortable' => false,
+    ),
+    'recruitment_exp_date' => 
+    array (
+      'type' => 'datetime',
+      'default' => true,
+      'label' => 'LBL_RECRUITMENT_EXP_DATE',
+      'width' => '10%',
+      'name' => 'recruitment_exp_date',
+      'sortable' => false,
+    ),
+    'visa_app_date' => 
+    array (
+      'type' => 'datetime',
+      'default' => true,
+      'label' => 'LBL_VISA_APP_DATE',
+      'width' => '10%',
+      'name' => 'visa_app_date',
+      'sortable' => false,
+    ),
+    'visa_app_exp_date' => 
+    array (
+      'type' => 'datetime',
+      'default' => true,
+      'label' => 'LBL_VISA_APP_EXP_DATE',
+      'width' => '10%',
+      'name' => 'visa_app_exp_date',
+      'sortable' => false,
+    ),
+    'skill_assessment_app_date' => 
+    array (
+      'type' => 'datetime',
+      'default' => true,
+      'label' => 'LBL_SKILL_ASSESSMENT_APP_DATE',
+      'width' => '10%',
+      'name' => 'skill_assessment_app_date',
+      'sortable' => false,
+    ),
+    'skill_assessment_app_exp_date' => 
+    array (
+      'type' => 'datetime',
+      'default' => true,
+      'label' => 'LBL_SKILL_ASSESSMENT_APP_EXP_DATE',
+      'width' => '10%',
+      'name' => 'skill_assessment_app_exp_date',
+      'sortable' => false,
+    ),
+    'nomination_app_date' => 
+    array (
+      'type' => 'datetime',
+      'default' => true,
+      'label' => 'LBL_NOMINATION_APP_DATE',
+      'width' => '10%',
+      'name' => 'nomination_app_date',
+      'sortable' => false,
+    ),
+    'nomination_app_exp_date' => 
+    array (
+      'type' => 'datetime',
+      'default' => true,
+      'label' => 'LBL_NOMINATION_APP_EXP_DATE',
+      'width' => '10%',
+      'name' => 'nomination_app_exp_date',
+      'sortable' => false,
+    ),
+  ),
+  'templateMeta' => 
+  array (
+    'maxColumns' => '3',
+    'maxColumnsBasic' => '4',
+    'widths' => 
+    array (
+      'label' => '10',
+      'field' => '30',
+    ),
+  ),
+);
+;
+?>

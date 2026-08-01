@@ -1,0 +1,29 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'Veta_Curso',
+    'varName' => 'Veta_Curso',
+    'orderBy' => 'veta_curso.name',
+    'whereClauses' => array (
+  'name' => 'veta_curso.name',
+),
+    'searchInputs' => array (
+  1 => 'name',
+),
+    'searchdefs' => array (
+  'name' => 
+  array (
+    'name' => 'name',
+    'width' => '10%',
+  ),
+),
+    'listviewdefs' => array (
+  'NAME' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_NAME',
+    'default' => true,
+    'link' => true,
+    'name' => 'name',
+  ),
+),
+);

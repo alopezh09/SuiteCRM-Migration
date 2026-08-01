@@ -1,0 +1,232 @@
+<?php
+$module_name = 'NVC_Companies';
+$OBJECT_NAME = 'NVC_COMPANIES';
+$listViewDefs [$module_name] = 
+array (
+  'NAME' => 
+  array (
+    'width' => '40%',
+    'label' => 'LBL_ACCOUNT_NAME',
+    'link' => true,
+    'default' => true,
+  ),
+  'DATE_ENTERED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_ENTERED',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'EMAIL_DOCS_PORTAL_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_EMAIL_DOCS_PORTAL',
+    'width' => '10%',
+  ),
+  'COMPANY_CONTACT_PERSON_NAME' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_COMPANY_CONTACT_PERSON_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'BILLING_ADDRESS_CITY' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_CITY',
+    'default' => true,
+  ),
+  'PHONE_OFFICE' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_PHONE',
+    'default' => true,
+  ),
+  'EMAIL1' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_EMAIL_ADDRESS',
+    'sortable' => false,
+    'link' => true,
+    'customCode' => '{$EMAIL1_LINK}',
+    'default' => true,
+  ),
+  'TAS_APPLICATION_DATE_C' => 
+  array (
+    'type' => 'date',
+    'default' => true,
+    'label' => 'LBL_TAS_APPLICATION_DATE',
+    'width' => '10%',
+  ),
+  'TAS_EXPECTATION_DATE_C' => 
+  array (
+    'type' => 'date',
+    'default' => true,
+    'label' => 'LBL_TAS_EXPECTATION_DATE',
+    'width' => '10%',
+  ),
+  'TAS_APPROVAL_DATE_C' => 
+  array (
+    'type' => 'date',
+    'default' => true,
+    'label' => 'LBL_TAS_APPROVAL_DATE',
+    'width' => '10%',
+  ),
+  'SBS_APPLICATION_DATE_C' => 
+  array (
+    'type' => 'date',
+    'default' => true,
+    'label' => 'LBL_SBS_APPLICATION_DATE',
+    'width' => '10%',
+  ),
+  'SBS_EXPECTATION_DATE_C' => 
+  array (
+    'type' => 'date',
+    'default' => true,
+    'label' => 'LBL_SBS_EXPECTATION_DATE',
+    'width' => '10%',
+  ),
+  'SBS_APPROVAL_DATE_C' => 
+  array (
+    'type' => 'date',
+    'default' => true,
+    'label' => 'LBL_SBS_APPROVAL_DATE',
+    'width' => '10%',
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '2%',
+    'label' => 'LBL_ASSIGNED_USER',
+    'module' => 'Employees',
+    'id' => 'ASSIGNED_USER_ID',
+    'default' => true,
+  ),
+  'ASSIGNED_CASE_MANAGER_C' => 
+  array (
+    'type' => 'relate',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_ASSIGNED_CASE_MANAGER',
+    'id' => 'USER_ID_C',
+    'link' => true,
+    'width' => '10%',
+  ),
+  'INACTIVE_C' => 
+  array (
+    'type' => 'bool',
+    'default' => true,
+    'label' => 'LBL_INACTIVE',
+    'width' => '10%',
+  ),
+  'NVC_COMPANIES_TYPE' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_TYPE',
+    'default' => false,
+  ),
+  'INDUSTRY' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_INDUSTRY',
+    'default' => false,
+  ),
+  'ANNUAL_REVENUE' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_ANNUAL_REVENUE',
+    'default' => false,
+  ),
+  'PHONE_FAX' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_PHONE_FAX',
+    'default' => false,
+  ),
+  'BILLING_ADDRESS_STREET' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_BILLING_ADDRESS_STREET',
+    'default' => false,
+  ),
+  'BILLING_ADDRESS_STATE' => 
+  array (
+    'width' => '7%',
+    'label' => 'LBL_BILLING_ADDRESS_STATE',
+    'default' => false,
+  ),
+  'BILLING_ADDRESS_POSTALCODE' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_BILLING_ADDRESS_POSTALCODE',
+    'default' => false,
+  ),
+  'BILLING_ADDRESS_COUNTRY' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_BILLING_ADDRESS_COUNTRY',
+    'default' => false,
+  ),
+  'SHIPPING_ADDRESS_STREET' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_SHIPPING_ADDRESS_STREET',
+    'default' => false,
+  ),
+  'SHIPPING_ADDRESS_CITY' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_SHIPPING_ADDRESS_CITY',
+    'default' => false,
+  ),
+  'SHIPPING_ADDRESS_STATE' => 
+  array (
+    'width' => '7%',
+    'label' => 'LBL_SHIPPING_ADDRESS_STATE',
+    'default' => false,
+  ),
+  'SHIPPING_ADDRESS_POSTALCODE' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_SHIPPING_ADDRESS_POSTALCODE',
+    'default' => false,
+  ),
+  'SHIPPING_ADDRESS_COUNTRY' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_SHIPPING_ADDRESS_COUNTRY',
+    'default' => false,
+  ),
+  'PHONE_ALTERNATE' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_PHONE_ALT',
+    'default' => false,
+  ),
+  'WEBSITE' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_WEBSITE',
+    'default' => false,
+  ),
+  'OWNERSHIP' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_OWNERSHIP',
+    'default' => false,
+  ),
+  'EMPLOYEES' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_EMPLOYEES',
+    'default' => false,
+  ),
+  'TICKER_SYMBOL' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_TICKER_SYMBOL',
+    'default' => false,
+  ),
+);
+;
+?>

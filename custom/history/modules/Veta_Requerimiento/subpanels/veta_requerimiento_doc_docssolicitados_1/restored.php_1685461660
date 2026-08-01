@@ -1,0 +1,99 @@
+<?php
+// created: 2023-05-30 15:47:35
+$layout_defs = array (
+  'name' => 
+  array (
+    'vname' => 'LBL_NAME',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'width' => '45%',
+    'default' => true,
+  ),
+  'date_entered' => 
+  array (
+    'type' => 'datetime',
+    'vname' => 'LBL_DATE_ENTERED',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'date_modified' => 
+  array (
+    'vname' => 'LBL_DATE_MODIFIED',
+    'width' => '45%',
+    'default' => true,
+  ),
+  'url' => 
+  array (
+    'type' => 'url',
+    'vname' => 'LBL_URL',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'estadodocumento' => 
+  array (
+    'type' => 'dynamicenum',
+    'studio' => 'visible',
+    'vname' => 'LBL_ESTADODOCUMENTO',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'fechaaprobado' => 
+  array (
+    'type' => 'datetimecombo',
+    'vname' => 'LBL_FECHAAPROBADO',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'uploaded_by_c' => 
+  array (
+    'type' => 'relate',
+    'default' => true,
+    'studio' => 'visible',
+    'vname' => 'LBL_UPLOADED_BY',
+    'id' => 'USER_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'target_module' => 'Users',
+    'target_record_key' => 'user_id_c',
+  ),
+  'edit_button' => 
+  array (
+    'vname' => 'LBL_EDIT_BUTTON',
+    'widget_class' => 'SubPanelEditButton',
+    'module' => 'Doc_DocsSolicitados',
+    'width' => '4%',
+    'default' => true,
+  ),
+  'remove_button' => 
+  array (
+    'vname' => 'LBL_REMOVE',
+    'widget_class' => 'SubPanelRemoveButton',
+    'module' => 'Doc_DocsSolicitados',
+    'width' => '5%',
+    'default' => true,
+  ),
+  'approve_button' => 
+  array (
+    'vname' => 'LBL_APPROVE',
+    'widget_class' => 'SubPanelApproveButtonChecklist',
+    'module' => 'Doc_Documentos_Adic',
+    'width' => '5%',
+    'default' => true,
+  ),
+  'reject_button' => 
+  array (
+    'vname' => 'LBL_APPROVE',
+    'widget_class' => 'SubPanelRejectButtonChecklist',
+    'module' => 'Doc_Documentos_Adic',
+    'width' => '5%',
+    'default' => true,
+  ),
+  'revising_button' => 
+  array (
+    'vname' => 'LBL_REVISING',
+    'widget_class' => 'SubPanelRevisingButtonChecklist',
+    'module' => 'Doc_Documentos_Adic',
+    'width' => '5%',
+    'default' => true,
+  ),
+);

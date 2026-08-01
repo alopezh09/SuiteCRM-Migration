@@ -1,0 +1,598 @@
+<?php
+$viewdefs ['Opportunities'] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'javascript' => '{$PROBABILITY_SCRIPT}',
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 'assigned_user_name',
+          1 => 
+          array (
+            'name' => 'estado_admisiones_c',
+            'studio' => 'visible',
+            'label' => 'LBL_ESTADO_ADMISIONES',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'estado_servicio_al_cliente_c',
+            'studio' => 'visible',
+            'label' => 'LBL_ESTADO_SERVICIO_AL_CLIENTE',
+          ),
+          1 => 
+          array (
+            'name' => 'estado_gestion_comercial_c',
+            'studio' => 'visible',
+            'label' => 'LBL_ESTADO_GESTION_COMERCIAL',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 'sales_stage',
+          1 => '',
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'consultation_fee',
+            'label' => 'LBL_CONSULTATION_FEE',
+            'customCode' => '{$fields.recruitment_exp_date.value}',
+          ),
+          1 => 
+          array (
+            'name' => 'consultation_date',
+            'label' => 'LBL_CONSULTATION_DATE',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'aplicant_1st_payment_date',
+            'label' => 'LBL_APPLICANT_1ST_PAYMENT_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'aplicant_first_payment_amount',
+            'label' => 'LBL_APLICANT_FIRST_PAYMENT_AMOUNT',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'profession',
+            'label' => 'LBL_PROFESSION',
+          ),
+          1 => 
+          array (
+            'name' => 'current_visa_subclass',
+            'label' => 'LBL_CURRENT_VISA_SUBCLASS',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'current_job_position',
+            'label' => 'LBL_CURRENT_JOB_POSITION',
+          ),
+          1 => 
+          array (
+            'name' => 'month_of_experience',
+            'label' => 'LBL_MONTHS_OF_EXPERIENCEL',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'level_of_english',
+            'label' => 'LBL_LEVEL_OF_ENGLISH',
+          ),
+          1 => 
+          array (
+            'name' => 'nationality',
+            'label' => 'LBL_NATIONALITY',
+          ),
+        ),
+        8 => 
+        array (
+          0 => 
+          array (
+            'name' => 'potential_visa_subclass',
+            'label' => 'LBL_POTENTIAL_VISA_SUBCLASS',
+          ),
+          1 => 
+          array (
+            'name' => 'cost_agrement_visa_subclass',
+            'label' => 'LBL_COST_AGREMENT_NUMBER',
+          ),
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cost_agrement_number',
+            'label' => 'LBL_COST_AGREMENT_NUMBER',
+          ),
+          1 => 
+          array (
+            'name' => 'quote_date',
+            'label' => 'LBL_QUOTE_DATE',
+          ),
+        ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'migration_agent_name',
+            'label' => 'LBL_MIGRATION_AGENT_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'leap_id',
+            'label' => 'LBL_LEAP_ID',
+          ),
+        ),
+        11 => 
+        array (
+          0 => 
+          array (
+            'name' => 'recluter_name',
+            'label' => 'LBL_RECLUTER_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'company_name',
+            'label' => 'LBL_COMPANY_NAME',
+          ),
+        ),
+        12 => 
+        array (
+          0 => 
+          array (
+            'name' => 'company_city',
+            'label' => 'LBL_COMPANY_CITY',
+          ),
+          1 => 
+          array (
+            'name' => 'company_industry',
+            'label' => 'LBL_COMPANY_INDUSTRY',
+          ),
+        ),
+        13 => 
+        array (
+          0 => 
+          array (
+            'name' => 'email_company',
+            'label' => 'LBL_EMAIL_COMPANY',
+          ),
+          1 => 
+          array (
+            'name' => 'phone_company',
+            'label' => 'LBL_PHONE_COMPANY',
+          ),
+        ),
+        14 => 
+        array (
+          0 => 
+          array (
+            'name' => 'company_1st_payment_date',
+            'label' => 'LBL_COMPANY_1ST_PAYMENT_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'company_first_payment_amount',
+            'label' => 'LBL_COMPANY_FIRST_PAYMENT_AMOUNT',
+          ),
+        ),
+        15 => 
+        array (
+          0 => 
+          array (
+            'name' => 'company_first_payment_date_c',
+            'label' => 'LBL_COMPANY_FIRST_PAYMENT_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'company_sbs_expiry_date',
+            'label' => 'LBL_COMPANY_SBS_EXPIRY_DATE',
+          ),
+        ),
+        16 => 
+        array (
+          0 => 
+          array (
+            'name' => 'secondary_aplicant_name',
+            'label' => 'LBL_SECONDARY_APLICANT_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'secondary_dob',
+            'label' => 'LBL_SECONDARY_DOB',
+          ),
+        ),
+        17 => 
+        array (
+          0 => 
+          array (
+            'name' => 'visa_expire_secondary_applic_c',
+            'label' => 'LBL_VISA_EXPIRE_SECONDARY_APPLIC',
+          ),
+          1 => 
+          array (
+            'name' => 'secondary_pasport_number',
+            'label' => 'LBL_SECONDARY_PASPORT_NUMBER',
+          ),
+        ),
+        18 => 
+        array (
+          0 => 
+          array (
+            'name' => 'dependent_name',
+            'label' => 'LBL_DEPENDENT_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'dependent_dob',
+            'label' => 'LBL_DEPENDENT_DOB',
+          ),
+        ),
+        19 => 
+        array (
+          0 => 
+          array (
+            'name' => 'visa_expire_1st_dependent_da_c',
+            'label' => 'LBL_VISA_EXPIRE_1ST_DEPENDENT_DA',
+          ),
+          1 => '',
+        ),
+        20 => 
+        array (
+          0 => 
+          array (
+            'name' => 'second_dependent_name',
+            'label' => 'LBL_SECOND_DEPENDENT_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'second_dependent_dob',
+            'label' => 'LBL_SECOND_DEPENDENT_DOB',
+          ),
+        ),
+        21 => 
+        array (
+          0 => 
+          array (
+            'name' => 'visa_expire_2st_dependent_da_c',
+            'label' => 'LBL_VISA_EXPIRE_2ST_DEPENDENT_DA',
+          ),
+          1 => '',
+        ),
+        22 => 
+        array (
+          0 => 
+          array (
+            'name' => 'third_dependent_name',
+            'label' => 'LBL_THIRD_DEPENDENT_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'third_dependent_dob_c',
+            'label' => 'LBL_THIRD_DEPENDENT_DOB',
+          ),
+        ),
+        23 => 
+        array (
+          0 => 
+          array (
+            'name' => 'visa_expire_3st_dependent_da_c',
+            'label' => 'LBL_VISA_EXPIRE_3ST_DEPENDENT_DA',
+          ),
+          1 => '',
+        ),
+        24 => 
+        array (
+          0 => 
+          array (
+            'name' => 'aplicant_mmm_fee',
+            'label' => 'LBL_APLICANT_MMM_FEE',
+          ),
+          1 => '',
+        ),
+        25 => 
+        array (
+          0 => 
+          array (
+            'name' => 'company_mmm_fee',
+            'label' => 'LBL_COMPANY_MMM_FEE',
+          ),
+          1 => 
+          array (
+            'name' => 'aplicant_company_mmm',
+            'label' => 'LBL_APLICANT_COMPANY_MMM',
+          ),
+        ),
+        26 => 
+        array (
+          0 => 
+          array (
+            'name' => 'total',
+            'label' => 'LBL_TOTAL',
+          ),
+          1 => 
+          array (
+            'name' => 'aplicant_company_mmm_fees',
+            'label' => 'LBL_APLICANT_COMPANY_MMM_FEES',
+          ),
+        ),
+        27 => 
+        array (
+          0 => 
+          array (
+            'name' => 'total_paid',
+            'label' => 'LBL_TOTAL_PAID',
+          ),
+          1 => 
+          array (
+            'name' => 'ocupation',
+            'label' => 'LBL_OCUPATION',
+          ),
+        ),
+        28 => 
+        array (
+          0 => 
+          array (
+            'name' => 'main_aplicant_name',
+            'label' => 'LBL_MAIN_APLICANT_NAME',
+          ),
+        ),
+        29 => 
+        array (
+          0 => 
+          array (
+            'name' => 'virtual_all_notes',
+            'studio' => 'visible',
+            'label' => 'LBL_VIRTUAL_NOTE',
+            'type' => 'readonly',
+            'customCode' => '<div style="white-space:pre-line">{$fields.virtual_all_notes.value}</div>',
+          ),
+        ),
+        30 => 
+        array (
+          0 => 
+          array (
+            'name' => 'virtual_note',
+            'studio' => 'visible',
+            'label' => 'LBL_NEW_NOTES',
+            'type' => 'text',
+          ),
+        ),
+        31 => 
+        array (
+          0 => 
+          array (
+            'name' => 'industry_aplicant',
+            'label' => 'LBL_INDUSTRY_APLICANT',
+          ),
+          1 => 
+          array (
+            'name' => 'discount',
+            'label' => 'LBL_DISCOUNT',
+          ),
+        ),
+        32 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outstanding_amount',
+            'label' => 'LBL_OUTSTANDING_AMOUNT',
+          ),
+          1 => 
+          array (
+            'name' => 'deposit',
+            'label' => 'LBL_DEPOSIT',
+          ),
+        ),
+        33 => 
+        array (
+          0 => 
+          array (
+            'name' => 'total_without_gst',
+            'label' => 'LBL_TOTAL_WITHOUT_GST',
+          ),
+          1 => 
+          array (
+            'name' => 'gst_percentage',
+            'label' => 'LBL_GST_PERCENTAGE',
+          ),
+        ),
+        34 => 
+        array (
+          0 => 
+          array (
+            'name' => 'department_credit_card_surcharge_percentage',
+            'label' => 'LBL_DEPARTMENT_CREDIT_CARD_SURCHARGE_PERCENTAGE',
+          ),
+          1 => 
+          array (
+            'name' => 'department_visa_fee_base_application_charge',
+            'label' => 'LBL_DEPARTMENT_VISA_FEE_BASE_APPLICATION_CHARGE',
+          ),
+        ),
+        35 => 
+        array (
+          0 => 
+          array (
+            'name' => 'insurance_value',
+            'label' => 'LBL_INSURANCE_VALUE',
+          ),
+          1 => 
+          array (
+            'name' => 'nomination_app_exp_date',
+            'label' => 'LBL_NOMINATION_APP_EXP_DATE',
+          ),
+        ),
+        36 => 
+        array (
+          0 => 
+          array (
+            'name' => 'nomination_app_date',
+            'label' => 'LBL_NOMINATION_APP_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'skill_assessment_app_exp_date',
+            'label' => 'LBL_SKILL_ASSESSMENT_APP_EXP_DATE',
+          ),
+        ),
+        37 => 
+        array (
+          0 => 
+          array (
+            'name' => 'skill_assessment_app_date',
+            'label' => 'LBL_SKILL_ASSESSMENT_APP_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'visa_app_exp_date',
+            'label' => 'LBL_VISA_APP_EXP_DATE',
+          ),
+        ),
+        38 => 
+        array (
+          0 => 
+          array (
+            'name' => 'visa_app_date',
+            'label' => 'LBL_VISA_APP_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'recruitment',
+            'label' => 'LBL_RECRUITMENT',
+          ),
+        ),
+        39 => 
+        array (
+          0 => 
+          array (
+            'name' => 'recruitment_exp_date',
+            'label' => 'LBL_RECRUITMENT_EXP_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'consultation_fee',
+            'label' => 'LBL_CONSULTATION_FEE',
+            'customCode' => '{$fields.recruitment_exp_date.value}',
+          ),
+        ),
+      ),
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'company_deposits_c',
+            'label' => 'LBL_COMPANY_DEPOSITS',
+          ),
+          1 => 
+          array (
+            'name' => 'company_discount_c',
+            'label' => 'LBL_COMPANY_DISCOUNT',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'company_dept_cc_surcharge_c',
+            'label' => 'LBL_COMPANY_DEPT_CC_SURCHARGE_C',
+          ),
+          1 => 
+          array (
+            'name' => 'company_dept_visa_fee_base_c',
+            'label' => 'LBL_COMPANY_DEPT_VISA_FEE_BASE',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'currency_id',
+            'label' => 'LBL_CURRENCY',
+          ),
+          1 => '',
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'company_gst_c',
+            'label' => 'LBL_COMPANY_GST',
+          ),
+          1 => 
+          array (
+            'name' => 'company_total_c',
+            'label' => 'LBL_COMPANY_TOTAL',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'company_total_without_gst_c',
+            'label' => 'LBL_COMPANY_TOTAL_WITHOUT_GST',
+          ),
+          1 => 
+          array (
+            'name' => 'company_outstanding_amount_c',
+            'label' => 'LBL_COMPANY_OUTSTANDING_AMOUNT',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+;
+?>

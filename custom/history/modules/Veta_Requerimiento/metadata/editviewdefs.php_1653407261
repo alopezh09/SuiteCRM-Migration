@@ -1,0 +1,654 @@
+<?php
+$module_name = 'Veta_Requerimiento';
+$viewdefs [$module_name] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => true,
+      'tabDefs' => 
+      array (
+        'DEFAULT' => 
+        array (
+          'newTab' => true,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL6' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL5' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL4' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL7' => 
+        array (
+          'newTab' => true,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 'assigned_user_name',
+          1 => 
+          array (
+            'name' => 'referido',
+            'label' => 'LBL_REFERIDO',
+            'customCode' => '{if $fields.referido.value}{$fields.referido.value}{else}{if $fields.campana.value}{$fields.campana.value}{else}@@FIELD@@{/if}{/if}',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'currently_living_together_c',
+            'studio' => 'visible',
+            'label' => 'LBL_CURRENTLY_LIVING_TOGETHER',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'veta_requerimiento_contacts_name',
+            'label' => 'LBL_VETA_REQUERIMIENTO_CONTACTS_FROM_CONTACTS_TITLE',
+          ),
+          1 => 
+          array (
+            'name' => 'veta_requerimiento_leads_name',
+            'label' => 'LBL_VETA_REQUERIMIENTO_LEADS_FROM_LEADS_TITLE',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'campana',
+            'studio' => 'visible',
+            'label' => 'LBL_CAMPANA',
+            'customCode' => '{if $fields.campana.value}{$fields.campana.value}{else}@@FIELD@@{/if}',
+          ),
+          1 => 
+          array (
+            'name' => 'fuente',
+            'studio' => 'visible',
+            'label' => 'LBL_FUENTE',
+            'customCode' => '{if $fields.company_lead_id_c.value}{$fields.company_lead_id_c.value}{else}@@FIELD@@{/if}',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fecha_proximo_contacto',
+            'label' => 'LBL_FECHA_PROXIMO_CONTACTO',
+          ),
+          1 => 
+          array (
+            'name' => 'fecha_ultimo_contacto',
+            'label' => 'LBL_FECHA_ULTIMO_CONTACTO',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fecha_viaje_txt',
+            'label' => 'LBL_FECHA_VIAJE_TXT',
+          ),
+          1 => 
+          array (
+            'name' => 'fecha_viaje',
+            'label' => 'LBL_FECHA_VIAJE',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'estado',
+            'studio' => 'visible',
+            'label' => 'LBL_ESTADO',
+          ),
+          1 => 
+          array (
+            'name' => 'presupuesto',
+            'label' => 'LBL_PRESUPUESTO',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'company_stage_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COMPANY_STAGE',
+          ),
+          1 => '',
+        ),
+        8 => 
+        array (
+          0 => 
+          array (
+            'name' => 'visto_bueno_comercial',
+            'label' => 'LBL_VISTO_BUENO_COMERCIAL',
+          ),
+          1 => 
+          array (
+            'name' => 'visto_bueno_visas',
+            'label' => 'LBL_VISTO_BUENO_VISAS',
+          ),
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'aplicant_1st_payment_date',
+            'label' => 'LBL_APPLICANT_1ST_PAYMENT_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'aplicant_first_payment_amount',
+            'label' => 'LBL_APPLICANT_FIRST_PAYMENT_AMOUNT',
+          ),
+        ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'potential_visa_subclass',
+            'label' => 'LBL_POTENTIAL_VISA_SUBCLASS',
+          ),
+          1 => 
+          array (
+            'name' => 'cost_agrement_visa_subclass',
+            'label' => 'LBL_COST_AGREMENT_NUMBER',
+          ),
+        ),
+        11 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cost_agrement_number',
+            'label' => 'LBL_COST_AGREMENT_NUMBER',
+          ),
+          1 => 
+          array (
+            'name' => 'quote_date',
+            'label' => 'LBL_QUOTE_DATE',
+            'customCode' => '{if $fields.quote_date.value}{$fields.quote_date.value}{else}@@FIELD@@{/if}',
+          ),
+        ),
+        12 => 
+        array (
+          0 => 
+          array (
+            'name' => 'current_visa_subclass',
+            'label' => 'LBL_CURRENT_VISA_SUBCLASS',
+          ),
+        ),
+        13 => 
+        array (
+          0 => 
+          array (
+            'name' => 'recluter_name',
+            'label' => 'LBL_RECLUTER_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'company_name',
+            'label' => 'LBL_COMPANY_NAME',
+          ),
+        ),
+        14 => 
+        array (
+          0 => 
+          array (
+            'name' => 'company_1st_payment_date',
+            'label' => 'LBL_COMPANY_1ST_PAYMENT_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'company_first_payment_amount',
+            'label' => 'LBL_COMPANY_FIRST_PAYMENT_AMOUNT',
+          ),
+        ),
+        15 => 
+        array (
+          0 => 
+          array (
+            'name' => 'secondary_pasport_number',
+            'label' => 'LBL_SECONDARY_PASPORT_NUMBER',
+          ),
+        ),
+        16 => 
+        array (
+          0 => array (
+            'name' => 'virtual_all_notes',
+            'studio' => 'visible',
+            'label' => 'LBL_VIRTUAL_NOTE',
+            'type' => 'readonly',
+            'customCode' => '<div style="white-space:pre-line">{$fields.virtual_all_notes.value}</div>',
+          ),
+        ),
+        17 => 
+        array (
+          0 => 
+          
+          array (
+            'name' => 'virtual_note',
+            'studio' => 'visible',
+            'label' => 'LBL_NEW_NOTES',
+          ),
+        ),
+        18 => 
+        array (
+          0 => 
+          array (
+            'name' => 'TEL_CASA',
+            'label' => 'LBL_TEL_CASA',
+            'customCode' => '{$TELCASA}',
+          ),
+          1 => 
+          array (
+            'name' => 'CELULAR',
+            'label' => 'LBL_CELULAR',
+            'customCode' => '{$CELULAR}',
+          ),
+        ),
+        19 => 
+        array (
+          0 => 
+          array (
+            'name' => 'FECHA_EXPIRACION_VISA',
+            'label' => 'LBL_FECHA_EXPIRACION_VISA',
+            'customCode' => '{$FECHA_EXPIRACION_VISA}',
+          ),
+          1 => 
+          array (
+            'name' => 'EMAIL',
+            'label' => 'LBL_EMAIL',
+            'customCode' => '{$EMAIL}',
+          ),
+        ),
+        20 => 
+        array (
+          0 => 
+          array (
+            'name' => 'industry_aplicant',
+            'label' => 'LBL_INDUSTRY_APLICANT',
+          ),
+          1 => 
+          array (
+            'name' => 'nomination_app_exp_date',
+            'label' => 'LBL_NOMINATION_APP_EXP_DATE',
+          ),
+        ),
+        21 => 
+        array (
+          0 => 
+          array (
+            'name' => 'nomination_app_date',
+            'label' => 'LBL_NOMINATION_APP_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'skill_assessment_app_exp_date',
+            'label' => 'LBL_SKILL_ASSESSMENT_APP_EXP_DATE',
+          ),
+        ),
+        22 => 
+        array (
+          0 => 
+          array (
+            'name' => 'skill_assessment_app_date',
+            'label' => 'LBL_SKILL_ASSESSMENT_APP_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'visa_app_exp_date',
+            'label' => 'LBL_VISA_APP_EXP_DATE',
+          ),
+        ),
+        23 => 
+        array (
+          0 => 
+          array (
+            'name' => 'visa_app_date',
+            'label' => 'LBL_VISA_APP_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'recruitment',
+            'label' => 'LBL_RECRUITMENT',
+          ),
+        ),
+        24 => 
+        array (
+          0 => 
+          array (
+            'name' => 'recruitment_exp_date',
+            'label' => 'LBL_RECRUITMENT_EXP_DATE',
+          ),
+        ),
+      ),
+      'lbl_editview_panel6' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'sponsored_australian_citizen_c',
+            'label' => 'LBL_SPONSORED_AUSTRALIAN_CITIZEN',
+          ),
+          1 => 
+          array (
+            'name' => 'australian_sponsor_name_c',
+            'label' => 'LBL_AUSTRALIAN_SPONSOR_NAME',
+          ),
+        ),
+      ),
+      'lbl_editview_panel5' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'current_job_position',
+            'label' => 'LBL_CURRENT_JOB_POSITION',
+          ),
+          1 => 
+          array (
+            'name' => 'month_of_experience',
+            'label' => 'LBL_MONTHS_OF_EXPERIENCEL',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'level_of_english',
+            'label' => 'LBL_LEVEL_OF_ENGLISH',
+          ),
+          1 => 
+          array (
+            'name' => 'nationality',
+            'label' => 'LBL_NATIONALITY',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'profession',
+            'label' => 'LBL_PROFESSION',
+          ),
+          1 => 
+          array (
+            'name' => 'ocupation',
+            'label' => 'LBL_OCUPATION',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'main_aplicant_name',
+            'label' => 'LBL_MAIN_APLICANT_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'leap_id',
+            'label' => 'LBL_LEAP_ID',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'secondary_aplicant_name',
+            'label' => 'LBL_SECONDARY_APLICANT_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'visa_expire_secondary_applicant_date_c',
+            'label' => 'LBL_VISA_EXPIRE_SECONDARY_APPLICANT_DATE',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'secondary_dob',
+            'label' => 'LBL_SECONDARY_DOB',
+          ),
+          1 => '',
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'dependent_name',
+            'label' => 'LBL_DEPENDENT_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'visa_expire_1st_dependent_date_c',
+            'label' => 'LBL_VISA_EXPIRE_1ST_DEPENDENT_DATE',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'dependent_dob',
+            'label' => 'LBL_DEPENDENT_DOB',
+          ),
+        ),
+        8 => 
+        array (
+          0 => 
+          array (
+            'name' => 'second_dependent_name',
+            'label' => 'LBL_SECOND_DEPENDENT_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'visa_expire_2nd_dependent_date_c',
+            'label' => 'LBL_VISA_EXPIRE_2ND_DEPENDENT_DATE',
+          ),
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'second_dependent_dob',
+            'label' => 'LBL_SECOND_DEPENDENT_DOB',
+          ),
+        ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'third_dependent_name',
+            'label' => 'LBL_THIRD_DEPENDENT_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'visa_expire_3rd_dependent_date_c',
+            'label' => 'LBL_VISA_EXPIRE_3RD_DEPENDENT_DATE',
+          ),
+        ),
+        11 => 
+        array (
+          0 => 
+          array (
+            'name' => 'third_dependent_dob_c',
+            'label' => 'LBL_THIRD_DEPENDENT_DOB',
+          ),
+          1 => '',
+        ),
+        12 => 
+        array (
+          0 => 
+          array (
+            'name' => 'TEL_CASA',
+            'label' => 'LBL_TEL_CASA',
+            'customCode' => '{$TELCASA}',
+          ),
+          1 => 
+          array (
+            'name' => 'CELULAR',
+            'label' => 'LBL_CELULAR',
+            'customCode' => '{$CELULAR}',
+          ),
+        ),
+        13 => 
+        array (
+          0 => 
+          array (
+            'name' => 'FECHA_EXPIRACION_VISA',
+            'label' => 'LBL_FECHA_EXPIRACION_VISA',
+            'customCode' => '{$FECHA_EXPIRACION_VISA}',
+          ),
+          1 => 
+          array (
+            'name' => 'EMAIL',
+            'label' => 'LBL_EMAIL',
+            'customCode' => '{$EMAIL}',
+          ),
+        ),
+      ),
+      'lbl_editview_panel4' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'consultation_fee',
+            'label' => 'LBL_CONSULTATION_FEE',
+          ),
+          1 => 
+          array (
+            'name' => 'consultation_date',
+            'label' => 'LBL_CONSULTATION_DATE',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'migration_agent_name',
+            'label' => 'LBL_MIGRATION_AGENT_NAME',
+          ),
+        ),
+      ),
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'nvc_companies_veta_requerimiento_1_name',
+            'label' => 'LBL_NVC_COMPANIES_VETA_REQUERIMIENTO_1_FROM_NVC_COMPANIES_TITLE',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'company_city',
+            'label' => 'LBL_COMPANY_CITY',
+            'customCode' => '{$fields.company_city.value}',
+          ),
+          1 => 
+          array (
+            'name' => 'company_industry',
+            'label' => 'LBL_COMPANY_INDUSTRY',
+            'customCode' => '{$fields.company_industry.value}',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'email_company',
+            'label' => 'LBL_EMAIL_COMPANY',
+            'customCode' => '{$fields.email_company.value}',
+          ),
+          1 => 
+          array (
+            'name' => 'phone_company',
+            'label' => 'LBL_PHONE_COMPANY',
+            'customCode' => '{$fields.phone_company.value}',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'company_sbs_expiry_date',
+            'label' => 'LBL_COMPANY_SBS_EXPIRY_DATE',
+            'customCode' => '{$fields.company_sbs_expiry_date.value}',
+          ),
+          1 => 
+          array (
+            'name' => 'company_lead_id_c',
+            'label' => 'LBL_COMPANY_LEAD_ID',
+            'customCode' => '{$fields.company_lead_id_c.value}',
+          ),
+        ),
+      ),
+      'lbl_editview_panel7' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'marketing_question_1_c',
+            'label' => 'LBL_MARKETING_QUESTION_1',
+          ),
+          1 => 
+          array (
+            'name' => 'marketing_question_2_c',
+            'label' => 'LBL_MARKETING_QUESTION_2',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+;
+?>

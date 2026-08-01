@@ -1,0 +1,139 @@
+<?php
+// created: 2024-09-06 21:58:01
+$layout_defs = array (
+  'change_status_c' => 
+  array (
+    'type' => 'bool',
+    'default' => true,
+    'vname' => 'LBL_CHANGE_STATUS',
+    'width' => '10%',
+  ),
+  'name' => 
+  array (
+    'vname' => 'LBL_NAME',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'width' => '45%',
+    'default' => true,
+  ),
+  'estado_de_visa_c' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'vname' => 'LBL_ESTADO_DE_VISA',
+    'width' => '10%',
+  ),
+  'url' => 
+  array (
+    'type' => 'url',
+    'vname' => 'LBL_URL',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'fechaaprobado' => 
+  array (
+    'type' => 'datetimecombo',
+    'vname' => 'LBL_FECHAAPROBADO',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'date_modified' => 
+  array (
+    'vname' => 'LBL_DATE_MODIFIED',
+    'width' => '45%',
+    'default' => true,
+  ),
+  'requested_to_c' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'vname' => 'LBL_REQUESTED_TO',
+    'width' => '10%',
+  ),
+  'estadodocumento' => 
+  array (
+    'type' => 'dynamicenum',
+    'studio' => 'visible',
+    'vname' => 'LBL_ESTADODOCUMENTO',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'internal_document_c' => 
+  array (
+    'type' => 'bool',
+    'default' => true,
+    'vname' => 'LBL_INTERNAL_DOCUMENT',
+    'width' => '10%',
+  ),
+  'document_comment_c' => 
+  array (
+    'vname' => 'LBL_DOCUMENT_COMMENT',
+    'width' => '45%',
+    'default' => true,
+    'type' => 'varchar',
+    'link' => false,
+    'enabled' => true,
+    'editable' => true,
+    'displayParams' => 
+    array (
+      'size' => '20',
+    ),
+  ),
+  'checklist_c' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'vname' => 'LBL_CHECKLIST',
+    'width' => '10%',
+  ),
+  'edit_button' => 
+  array (
+    'vname' => 'LBL_EDIT_BUTTON',
+    'widget_class' => 'SubPanelEditButton',
+    'module' => 'Doc_Documentos_Adic',
+    'width' => '4%',
+    'default' => true,
+  ),
+  'remove_button' => 
+  array (
+    'vname' => 'LBL_REMOVE',
+    'widget_class' => 'SubPanelRemoveButton',
+    'module' => 'Doc_Documentos_Adic',
+    'width' => '5%',
+    'default' => true,
+  ),
+  'approve_button' => 
+  array (
+    'vname' => 'LBL_APPROVE',
+    'widget_class' => 'SubPanelApproveButtonChecklist',
+    'module' => 'Doc_Documentos_Adic',
+    'width' => '5%',
+    'default' => true,
+  ),
+  'reject_button' => 
+  array (
+    'vname' => 'LBL_REJECT',
+    'widget_class' => 'SubPanelRejectButtonChecklist',
+    'module' => 'Doc_Documentos_Adic',
+    'width' => '5%',
+    'default' => true,
+  ),
+  'revising_button' => 
+  array (
+    'vname' => 'LBL_REVISING',
+    'widget_class' => 'SubPanelRevisingButtonChecklist',
+    'module' => 'Doc_Documentos_Adic',
+    'width' => '5%',
+    'default' => true,
+  ),
+  'quickedit_button' => 
+  array (
+    'vname' => 'LBL_REVISING',
+    'widget_class' => 'SubPanelQuickEditButton',
+    'module' => 'Doc_Documentos_Adic',
+    'width' => '5%',
+    'default' => true,
+  ),
+);

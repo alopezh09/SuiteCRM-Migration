@@ -1,0 +1,746 @@
+<?php
+$module_name = 'Veta_Requerimiento';
+$listViewDefs [$module_name] = 
+array (
+  'NAME' => 
+  array (
+    'width' => '32%',
+    'label' => 'LBL_NAME',
+    'default' => true,
+    'link' => true,
+  ),
+
+  'VETA_REQUERIMIENTO_CONTACTS_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_VETA_REQUERIMIENTO_CONTACTS_FROM_CONTACTS_TITLE',
+    'id' => 'VETA_REQUERIMIENTO_CONTACTSCONTACTS_IDA',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'VETA_REQUERIMIENTO_LEADS_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_VETA_REQUERIMIENTO_LEADS_FROM_LEADS_TITLE',
+    'id' => 'VETA_REQUERIMIENTO_LEADSLEADS_IDA',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'DATE_ENTERED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_ENTERED',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '9%',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'module' => 'Employees',
+    'id' => 'ASSIGNED_USER_ID',
+    'default' => true,
+  ),
+  'FUENTE' => 
+  array (
+    'type' => 'enum',
+    'studio' => 'visible',
+    'label' => 'LBL_FUENTE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'CAMPANA' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_CAMPANA',
+    'id' => 'CAMPAIGN_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'default' => true,
+  ),
+  'FECHA_VIAJE_TXT' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_FECHA_VIAJE_TXT',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'FECHA_VIAJE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_FECHA_VIAJE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'VISTO_BUENO_COMERCIAL' => 
+  array (
+    'type' => 'bool',
+    'default' => true,
+    'label' => 'LBL_VISTO_BUENO_COMERCIAL',
+    'width' => '10%',
+  ),
+  'VISTO_BUENO_VISAS' => 
+  array (
+    'type' => 'bool',
+    'default' => true,
+    'label' => 'LBL_VISTO_BUENO_VISAS',
+    'width' => '10%',
+  ),
+  'PRESUPUESTO' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PRESUPUESTO',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'FECHA_PROXIMO_CONTACTO' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_FECHA_PROXIMO_CONTACTO',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'FECHA_ULTIMO_CONTACTO' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_FECHA_ULTIMO_CONTACTO',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'FECHA_PRIMER_PRESUPUESTO' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_FECHA_PRIMER_PRESUPUESTO',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'REFERIDO' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_REFERIDO',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ESTADO' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_ESTADO',
+    'width' => '10%',
+  ),
+  'SOEL_HOME_PHONE_LEAD' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_HOME_PHONE_LEAD',
+          'width' => '10%',
+          'default' => true,
+          'sortable'=>false,
+      ),
+  'SOEL_MOBILE_PHONE_LEAD' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_MOBILE_PHONE_LEAD',
+          'width' => '10%',
+          'default' => true,
+          'sortable'=> false,
+      ),
+  'SOEL_FECHA_EXPIRACION_VISA_LEAD' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_FECHA_EXPIRACION_VISA_LEAD',
+          'width' => '10%',
+          'default' => true,
+          'sortable'=> false,
+      ),
+  'SOEL_FECHA_EXPIRACION_VISA_TEXTO_LEAD' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_EXPIRACION_VISA_TEXTO_LEAD',
+          'width' => '10%',
+          'default' => true,
+          'sortable'=> false,
+      ),
+  'SOEL_EDAD_LEAD' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_EDAD_LEAD',
+          'width' => '10%',
+          'default' => true,
+          'sortable'=> false,
+      ),
+  'DESCRIPTION' => 
+  array (
+    'type' => 'text',
+    'label' => 'LBL_DESCRIPTION',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => false,
+  ),
+  'CREATED_BY_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_CREATED',
+    'id' => 'CREATED_BY',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'MODIFIED_BY_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_MODIFIED_NAME',
+    'id' => 'MODIFIED_USER_ID',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'DATE_MODIFIED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_MODIFIED',
+    'width' => '10%',
+    'default' => false,
+  ),
+
+  'SOEL_FECHA_MODIFICACION_LEAD' =>
+      array (
+          'type' => 'datetime',
+          'label' => 'LBL_SOEL_FECHA_MODIFICACION_LEAD',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_ESTADO_LEAD' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_ESTADO_LEAD',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_FUENTE_LEAD' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_FUENTE_LEAD',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_PAIS_LEAD' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_PAIS_LEAD',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_DEPARTAMENTO_LEAD' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_DEPARTAMENTO_LEAD',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_CIUDAD_LEAD' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_CIUDAD_LEAD',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_VISA_LEAD' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_VISA_LEAD',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_PASAPORTE_LEAD' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_PASAPORTE_LEAD',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_ASIGNADO_LEAD' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_ASIGNADO_LEAD',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_CAMPANA_LEAD' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_CAMPANA_LEAD',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_CONVERTIDO_LEAD' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_CONVERTIDO_LEAD',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_HOME_PHONE_CONTACT' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_HOME_PHONE_CONTACT',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_MOBILE_PHONE_CONTACT' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_MOBILE_PHONE_CONTACT',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_FUENTE_CONTACT' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_FUENTE_CONTACT',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_PAIS_CONTACT' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_PAIS_CONTACT',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_DEPARTAMENTO_CONTACT' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_DEPARTAMENTO_CONTACT',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_CIUDAD_CONTACT' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_CIUDAD_CONTACT',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_FECHA_EXPIRACION_VISA_CONTACT' =>
+      array (
+          'type' => 'datetime',
+          'label' => 'LBL_SOEL_FECHA_EXPIRACION_VISA_CONTACT',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_ASIGNADO_CONTACT' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_ASIGNADO_CONTACT',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_FECHA_MODIFICACION_CONTACT' =>
+      array (
+          'type' => 'datetime',
+          'label' => 'LBL_SOEL_FECHA_MODIFICACION_CONTACT',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_VISA_CONTACT' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_VISA_CONTACT',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_CAMPANA_CONTACT' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_CAMPANA_CONTACT',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+  'SOEL_OFICINA_COMERCIAL' =>
+      array (
+          'type' => 'varchar',
+          'label' => 'LBL_SOEL_OFICINA_COMERCIAL',
+          'width' => '10%',
+          'default' => false,
+          'sortable' => false,
+      ),
+ 
+       //Nuevos Fields 
+
+ 'INDUSTRY_APLICANT' =>
+ array (
+     'type' => 'varchar',
+     'label' => 'LBL_INDUSTRY_APLICANT',
+     'width' => '10%',
+     'default' => true,
+ ), 
+
+'CONSULTATION_DATE' =>
+array (
+'type' => 'date',
+'label' => 'LBL_CONSULTATION_DATE',
+'width' => '10%',
+'default' => true,
+),    
+
+'APPLICANT_1ST_PAYMENT_DATE' =>
+array (
+'type' => 'date',
+'label' => 'LBL_APPLICANT_1ST_PAYMENT_DATE',
+'width' => '10%',
+'default' => true,
+),
+
+'APPLICANT_FIRST_PAYMENT_AMOUNT' =>
+array (
+'type' => 'varchar',
+'label' => 'LBL_APPLICANT_FIRST_PAYMENT_AMOUNT',
+'width' => '10%',
+'default' => true,
+),
+
+'PROFESSION' =>
+ array (
+     'type' => 'varchar',
+     'label' => 'LBL_PROFESSION',
+     'width' => '10%',
+     'default' => true,
+ ),
+
+'CURRENT_VISA_SUBCLASS' =>
+array (
+'type' => 'varchar',
+'label' => 'LBL_CURRENT_VISA_SUBCLASS',
+'width' => '10%',
+'default' => true,
+),
+
+'CURRENT_JOB_POSITION' =>
+ array (
+     'type' => 'varchar',
+     'label' => 'LBL_CURRENT_JOB_POSITION',
+     'width' => '10%',
+     'default' => true,
+ ),
+
+'MONTHS_OF_EXPERIENCE' =>
+array (
+'type' => 'varchar',
+'label' => 'LBL_MONTHS_OF_EXPERIENCEL',
+'width' => '10%',
+'default' => true,
+),
+
+'LEVEL_OF_ENGLISH' =>
+ array (
+     'type' => 'varchar',
+     'label' => 'LBL_LEVEL_OF_ENGLISH',
+     'width' => '10%',
+     'default' => true,
+ ),
+
+'NATIONALITY' =>
+array (
+'type' => 'varchar',
+'label' => 'LBL_NATIONALITY',
+'width' => '10%',
+'default' => true,
+),
+
+'POTENTIAL_VISA_SUBCLASS' =>
+ array (
+     'type' => 'varchar',
+     'label' => 'LBL_POTENTIAL_VISA_SUBCLASS',
+     'width' => '10%',
+     'default' => true,
+ ),
+
+'COST_AGREMENT_NUMBER' =>
+array (
+'type' => 'varchar',
+'label' => 'LBL_COST_AGREMENT_NUMBER',
+'width' => '10%',
+'default' => true,
+),
+
+'COST_AGREMENT_VISA_SUBCLASS' =>
+ array (
+     'type' => 'varchar',
+     'label' => 'LBL_COST_AGREMENT_VISA_SUBCLASS',
+     'width' => '10%',
+     'default' => true,
+ ),
+
+'QUOTE_DATE' =>
+array (
+'type' => 'date',
+'label' => 'LBL_QUOTE_DATE',
+'width' => '10%',
+'default' => true,
+),
+
+'MIGRATION_AGENT_NAME' =>
+ array (
+     'type' => 'varchar',
+     'label' => 'LBL_MIGRATION_AGENT_NAME',
+     'width' => '10%',
+     'default' => true,
+ ),
+
+'LEAP_ID' =>
+array (
+'type' => 'varchar',
+'label' => 'LBL_LEAP_ID',
+'width' => '10%',
+'default' => true,
+),
+
+'RECLUTER_NAME' =>
+ array (
+     'type' => 'varchar',
+     'label' => 'LBL_RECLUTER_NAME',
+     'width' => '10%',
+     'default' => true,
+ ),
+
+'COMPANY_NAME' =>
+array (
+'type' => 'varchar',
+'label' => 'LBL_COMPANY_NAME',
+'width' => '10%',
+'default' => true,
+),
+
+'COMPANY_CITY' =>
+ array (
+     'type' => 'varchar',
+     'label' => 'LBL_COMPANY_CITY',
+     'width' => '10%',
+     'default' => true,
+ ),
+
+'COMPANY_INDUSTRY' =>
+array (
+'type' => 'varchar',
+'label' => 'LBL_COMPANY_INDUSTRY',
+'width' => '10%',
+'default' => true,
+),
+
+'EMAIL_COMPANY' =>
+ array (
+     'type' => 'varchar',
+     'label' => 'LBL_EMAIL_COMPANY',
+     'width' => '10%',
+     'default' => true,
+ ),
+
+'PHONE_COMPANY' =>
+array (
+'type' => 'varchar',
+'label' => 'LBL_PHONE_COMPANY',
+'width' => '10%',
+'default' => true,
+),
+
+'COMPANY_1ST_PAYMENT_DATE' =>
+array (
+'type' => 'date',
+'label' => 'LBL_COMPANY_1ST_PAYMENT_DATE',
+'width' => '10%',
+'default' => true,
+),
+
+'COMPANY_FIRST_PAYMENT_AMOUNT' =>
+array (
+'type' => 'varchar',
+'label' => 'LBL_COMPANY_FIRST_PAYMENT_AMOUNT',
+'width' => '10%',
+'default' => true,
+),
+
+'COMPANY_SBS_EXPIRY_DATE' =>
+array (
+'type' => 'date',
+'label' => 'LBL_COMPANY_SBS_EXPIRY_DATE',
+'width' => '10%',
+'default' => true,
+),
+
+//NEW 7 FIELDS
+
+'SECONDARY_APLICANT_NAME' =>
+array (
+    'type' => 'varchar',
+    'label' => 'LBL_SECONDARY_APLICANT_NAME',
+    'width' => '10%',
+    'default' => true,
+),
+
+'SECONDARY_PASPORT_NUMBER' =>
+array (
+    'type' => 'varchar',
+    'label' => 'LBL_SECONDARY_PASPORT_NUMBER',
+    'width' => '10%',
+    'default' => true,
+),
+
+'SECONDARY_DOB' =>
+array (
+    'type' => 'date',
+    'label' => 'LBL_SECONDARY_DOB',
+    'width' => '10%',
+    'default' => true,
+),
+
+'DEPENDENT_NAME' =>
+array (
+    'type' => 'varchar',
+    'label' => 'LBL_DEPENDENT_NAME',
+    'width' => '10%',
+    'default' => true,
+),
+
+'DEPENDENT_DOB' =>
+array (
+    'type' => 'date',
+    'label' => 'LBL_DEPENDENT_DOB',
+    'width' => '10%',
+    'default' => true,
+),
+
+'APLICANT_MMM_FEE' =>
+array (
+    'type' => 'varchar',
+    'label' => 'LBL_APLICANT_MMM_FEE',
+    'width' => '10%',
+    'default' => true,
+),
+
+'SECOND_DEPENDENT_NAME' =>
+array (
+    'type' => 'varchar',
+    'label' => 'LBL_SECOND_DEPENDENT_NAME',
+    'width' => '10%',
+    'default' => true,
+),
+
+//NEW 11 FIELDS
+
+'SECOND_DEPENDENT_DOB' =>
+array (
+    'type' => 'date',
+    'label' => 'LBL_SECOND_DEPENDENT_DOB',
+    'width' => '10%',
+    'default' => true,
+),
+
+'THIRD_DEPENDENT_NAME' =>
+array (
+    'type' => 'varchar',
+    'label' => 'LBL_THIRD_DEPENDENT_NAME',
+    'width' => '10%',
+    'default' => true,
+),
+
+'CONSULTATION_FEE' =>
+array (
+    'type' => 'varchar',
+    'label' => 'LBL_CONSULTATION_FEE',
+    'width' => '10%',
+    'default' => true,
+),
+
+'APLICANT_DEPARTMENTS_VISA_FEE' =>
+array (
+    'type' => 'varchar',
+    'label' => 'LBL_APLICANT_DEPARTMENTS_VISA_FEE',
+    'width' => '10%',
+    'default' => true,
+),
+
+'COMPANY_MMM_FEE' =>
+array (
+    'type' => 'varchar',
+    'label' => 'LBL_COMPANY_MMM_FEE',
+    'width' => '10%',
+    'default' => true,
+),
+
+'APLICANT_COMPANY_MMM' =>
+array (
+    'type' => 'varchar',
+    'label' => 'LBL_APLICANT_COMPANY_MMM',
+    'width' => '10%',
+    'default' => true,
+),
+
+'TOTAL' =>
+array (
+    'type' => 'varchar',
+    'label' => 'LBL_TOTAL',
+    'width' => '10%',
+    'default' => true,
+),
+
+'APLICANT_COMPANY_MMM_FEES' =>
+array (
+    'type' => 'varchar',
+    'label' => 'LBL_APLICANT_COMPANY_MMM_FEES',
+    'width' => '10%',
+    'default' => true,
+),
+
+'TOTAL_PAID' =>
+array (
+    'type' => 'varchar',
+    'label' => 'LBL_TOTAL_PAID',
+    'width' => '10%',
+    'default' => true,
+),
+
+'OCUPATION' =>
+array (
+    'type' => 'varchar',
+    'label' => 'LBL_OCUPATION',
+    'width' => '10%',
+    'default' => true,
+),
+
+'MAIN_APLICANT_NAME' =>
+array (
+    'type' => 'varchar',
+    'label' => 'LBL_MAIN_APLICANT_NAME',
+    'width' => '10%',
+    'default' => true,
+),
+
+);
+
+?>

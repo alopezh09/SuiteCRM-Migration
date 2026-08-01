@@ -1,0 +1,106 @@
+<?php
+$module_name = 'Veta_Curso';
+$listViewDefs [$module_name] = 
+array (
+  'NAME' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_NAME',
+    'default' => true,
+    'link' => true,
+  ),
+  'DISPLAY_NAME_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_DISPLAY_NAME',
+    'width' => '10%',
+  ),
+  'MODIFIED_BY_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_MODIFIED_NAME',
+    'id' => 'MODIFIED_USER_ID',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'DATE_ENTERED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_ENTERED',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'DATE_MODIFIED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_MODIFIED',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SUBCLASS_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_SUBCLASS',
+    'width' => '10%',
+  ),
+  'NAME_VISATYPE' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_NAME_VISA_TYPE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'TURNOVER_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_TURNOVER',
+    'width' => '10%',
+  ),
+  'PROCESS_TYPE_C' => 
+  array (
+    'type' => 'multienum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_PROCESS_TYPE',
+    'width' => '10%',
+  ),
+  'IS_CONSULTATION_FEE_C' => 
+  array (
+    'type' => 'bool',
+    'default' => true,
+    'label' => 'LBL_IS_CONSULTATION_FEE',
+    'width' => '10%',
+  ),
+  'TIPOVISA' => 
+  array (
+    'type' => 'dynamicenum',
+    'studio' => 'visible',
+    'id' => 'VETA_TIPOSVISA_ID_C',
+    'label' => 'LBL_TIPOVISA',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ACTIVO' => 
+  array (
+    'type' => 'bool',
+    'default' => true,
+    'label' => 'LBL_ACTIVO',
+    'width' => '10%',
+  ),
+  'PROCESSES_C' => 
+  array (
+    'type' => 'multienum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_PROCESSES',
+    'width' => '10%',
+  ),
+);
+;
+?>

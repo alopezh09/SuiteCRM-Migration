@@ -1,0 +1,81 @@
+<?php
+$module_name = 'Veta_College';
+$listViewDefs [$module_name] = 
+array (
+  'NAME' => 
+  array (
+    'width' => '32%',
+    'label' => 'LBL_NAME',
+    'default' => true,
+    'link' => true,
+  ),
+  'TYPE_OF_FEE_C' => 
+  array (
+    'type' => 'dynamicenum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_TYPE_OF_FEE',
+    'width' => '10%',
+  ),
+  'FEE' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_FEE',
+    'studio' => 'visible',
+    'width' => '6%',
+    'default' => true,
+  ),
+  'APPLY_GST_C' => 
+  array (
+    'type' => 'bool',
+    'default' => true,
+    'label' => 'LBL_APPLY_GST',
+    'width' => '10%',
+  ),
+  'TIPOVISA' => 
+  array (
+    'type' => 'dynamicenum',
+    'studio' => 'visible',
+    'label' => 'LBL_TIPOVISA',
+    'id' => 'VETA_TIPOSVISA_ID_C',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'tipovisa',
+  ),
+  'COMPANY_FEE_C' => 
+  array (
+    'type' => 'currency',
+    'default' => true,
+    'label' => 'LBL_COMPANY_FEE',
+    'currency_format' => true,
+    'width' => '10%',
+  ),
+  'VETA_CURSO_VETA_COLLEGE_1_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_VETA_CURSO_VETA_COLLEGE_1_FROM_VETA_CURSO_TITLE',
+    'id' => 'VETA_CURSO_VETA_COLLEGE_1VETA_CURSO_IDA',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'VETA_RECIBO_VETA_COLLEGE_1_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_VETA_RECIBO_VETA_COLLEGE_1_FROM_VETA_RECIBO_TITLE',
+    'id' => 'VETA_RECIBO_VETA_COLLEGE_1VETA_RECIBO_IDA',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'PROCESS_TYPE_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_PROCESS_TYPE',
+    'width' => '10%',
+  ),
+);
+;
+?>
