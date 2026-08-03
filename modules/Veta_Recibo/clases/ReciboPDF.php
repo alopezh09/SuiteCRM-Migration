@@ -1069,6 +1069,12 @@ class ReciboPDF extends FPDF
         if ($this->fourth_dependent_name) {
             $this->leftTextInfo("Fourth Dependent Name: " . $this->fourth_dependent_name . " Birthday: " . $this->requeriment->fourth_dependent_dob_c, "", "9");
         }
+		
+		$this->Ln(6);
+        $this->SetFont('Arial', 'B', 9);
+        $this->MultiCell(0, 4, utf8_decode("If you are applying for an Employer Sponsor visa this is for you, if not please disregard this statement:"), 0, 'L');
+        $this->SetFont('Arial', '', 9);
+        $this->MultiCell(0, 4, utf8_decode("The Client provides consent for their employer/sponsor to be informed of the outcome of their application, including confirmation that the visa application has been approved."), 0, 'J');
     }
 
     private function print_abono(Veta_Abono $a)
