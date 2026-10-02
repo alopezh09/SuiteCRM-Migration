@@ -59,7 +59,7 @@ class PresupuestoPDF_company extends FPDF
         $taxes_fees->retrieve("c83b8f80-f55b-6938-0b3d-6156426782bf");        
         
         $this->taxes_GST = $taxes_fees->gst /100;
-        $this->taxes_Department_Credit_Card= $taxes_fees->department_cc_surcharge / 100;
+        $this->taxes_Department_Credit_Card= 0; // Department's Credit Card Surcharge ya no se cobra (temas legales en Australia)
         
 
         $this->SetMargins( $this->margen , $this->margen , $this->margen );
@@ -500,7 +500,9 @@ class PresupuestoPDF_company extends FPDF
                 //$this->print_billing_info ("Department's Visa Fee - Base application charge ( " . $visa->name . " )", $visa->company_total_visa_c, '+','',8);
                 $this->total_taxes_Department_Credit_Card += $this->company_total_visa * ($this->taxes_Department_Credit_Card); 
                 
-                $this->print_billing_info ("Department's Credit Card Surcharge (1.4%)", $this->total_taxes_Department_Credit_Card, '+','',8); 
+                if ($this->total_taxes_Department_Credit_Card > 0) {
+                    $this->print_billing_info ("Department's Credit Card Surcharge (1.4%)", $this->total_taxes_Department_Credit_Card, '+','',8);
+                } 
                 //Department’s Credit Card Surcharge (1.4%)
 
                 //$this->print_billing_info ("Department's Credit Card Surcharge (1.4%)", ($p->total_visa * $this->taxes_GST_percentage), '','',8);

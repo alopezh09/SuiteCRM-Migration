@@ -376,7 +376,7 @@ class Veta_Presupuesto extends Basic
         $taxes_fees->retrieve("c83b8f80-f55b-6938-0b3d-6156426782bf");        
         
         $taxes_GST = $taxes_fees->gst /100;
-        $taxes_Department_Credit_Card= $taxes_fees->department_cc_surcharge / 100;
+        $taxes_Department_Credit_Card= 0; // Department's Credit Card Surcharge ya no se cobra (temas legales en Australia)
 
         
         $requermimento_presupuesto = $this->get_linked_beans( 'veta_requerimiento_veta_presupuesto' , 'Veta_Presupuesto' );        
@@ -451,8 +451,8 @@ class Veta_Presupuesto extends Basic
         $r->company_gst_c = number_format(($company_total_taxes_GST), 2,",",".");
         $r->company_total_c = number_format(($total_plus_company), 2,",",".");
         $r->company_discount_c = number_format(($this->company_discount_c), 2,",",".");
-        $r->company_dept_cc_surcharge_c = number_format(($this->total_visa_company_c), 2,",",".");
-        $r->company_dept_visa_fee_base_c = number_format(($total_taxes_Department_Credit_Card_company), 2,",",".");
+        $r->company_dept_cc_surcharge_c = number_format(($total_taxes_Department_Credit_Card_company), 2,",",".");
+        $r->company_dept_visa_fee_base_c = number_format(($this->total_visa_company_c), 2,",",".");
         $r->company_first_payment_amount = number_format(($total_plus_company), 2,",",".");
         
         

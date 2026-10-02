@@ -876,6 +876,12 @@ $dictionary['Veta_Recibo']['fields']['company_skill_assessment_fee1_c']['labelVa
 
  
 
+ // created: 2026-10-02 12:05:25
+$dictionary['Veta_Recibo']['fields']['cc_surcharge_legacy_c']['inline_edit']='';
+$dictionary['Veta_Recibo']['fields']['cc_surcharge_legacy_c']['labelValue']='CC Surcharge Legacy';
+
+ 
+
  // created: 2022-02-21 21:27:00
 $dictionary['Veta_Recibo']['fields']['applicant_skill_assessment_fee3_c']['inline_edit']='';
 $dictionary['Veta_Recibo']['fields']['applicant_skill_assessment_fee3_c']['labelValue']='Applicant Skill Assessment Fee3';

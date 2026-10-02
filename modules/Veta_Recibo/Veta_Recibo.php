@@ -140,6 +140,20 @@ class Veta_Recibo extends Basic
 		}
 	} 
 
+    /**
+     * Tasa (fraccion) del Department's Credit Card Surcharge para este recibo.
+     * Por temas legales en Australia ya no se cobra: solo los recibos creados antes
+     * del cambio (marcados con cc_surcharge_legacy_c) conservan el recargo configurado.
+     */
+    public function get_department_cc_surcharge_rate($taxes_fees)
+    {
+        if (empty($this->cc_surcharge_legacy_c)) {
+            return 0;
+        }
+
+        return $taxes_fees->department_cc_surcharge / 100;
+    }
+
     public function actualizar_oportunidad($o)
     {
 
@@ -162,7 +176,7 @@ class Veta_Recibo extends Basic
             $taxes_fees->retrieve("c83b8f80-f55b-6938-0b3d-6156426782bf");
 
             $taxes_GST = $taxes_fees->gst / 100;
-            $taxes_Department_Credit_Card = $taxes_fees->department_cc_surcharge / 100;
+            $taxes_Department_Credit_Card = $this->get_department_cc_surcharge_rate($taxes_fees);
 
             $requermimento_presupuesto = $this->get_linked_beans('veta_requerimiento_veta_recibo', 'Veta_Recibo');
             $id_requermimiento = "";
@@ -1459,7 +1473,7 @@ class Veta_Recibo extends Basic
         $taxes_fees->retrieve("c83b8f80-f55b-6938-0b3d-6156426782bf");
 
         $taxes_GST = $taxes_fees->gst / 100;
-        $taxes_Department_Credit_Card = $taxes_fees->department_cc_surcharge / 100;
+        $taxes_Department_Credit_Card = $this->get_department_cc_surcharge_rate($taxes_fees);
 
 
         $requermimento_presupuesto = $this->get_linked_beans('veta_requerimiento_veta_recibo', 'Veta_Recibo');
@@ -1602,8 +1616,8 @@ class Veta_Recibo extends Basic
         $req->company_gst_c = number_format(($company_total_taxes_GST), 2, ",", ".");
         $req->company_total_c = number_format(($total_plus_company), 2, ",", ".");
         $req->company_discount_c = number_format(($this->company_discount_c), 2, ",", ".");
-        $req->company_dept_cc_surcharge_c = number_format(($this->total_visa_company_c), 2, ",", ".");
-        $req->company_dept_visa_fee_base_c = number_format(($total_taxes_Department_Credit_Card_company), 2, ",", ".");
+        $req->company_dept_cc_surcharge_c = number_format(($total_taxes_Department_Credit_Card_company), 2, ",", ".");
+        $req->company_dept_visa_fee_base_c = number_format(($this->total_visa_company_c), 2, ",", ".");
         //$req->company_first_payment_amount = number_format(($total_plus_company), 2,",",".");
 
         // $req->aplicant_company_mmm_fees = number_format(($req->company_mmm_fee + $req->aplicant_mmm_fee), 2,",",".");
